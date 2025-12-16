@@ -1,0 +1,176 @@
+/* ===========HERO=========== */
+
+.slider {
+    position: relative;
+    height: 30vw;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+}
+
+.caption h1 {
+    font-size: 4.4vw;
+}
+
+/* content */
+
+.quote-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+    padding: 4vw 6vw;
+}
+
+.contact-info-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5vw;
+    width: 45%;
+}
+
+.contact-box {
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1.2vw;
+    border-radius: 0.5vw;
+}
+
+.contact-box img{
+    width: 20%;
+}
+
+.contact-box h3 {
+    margin-bottom: 0.5vw;
+    font-size: 1.3vw;
+}
+
+.contact-box p {
+    font-size: 1vw;
+    line-height: 1.4vw;
+}
+
+.quote-form {
+    width: 55%;
+}
+
+.quote-form h1 {
+    font-size: 3vw;
+    margin-bottom: 0.5vw;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background: black;
+    margin-bottom: 2vw;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+.quote-form input,
+.quote-form textarea {
+    font: inherit;
+    width: 100%;
+    padding: 0.5vw;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    font-size: 1vw;
+}
+
+textarea {
+    height: 11vw;
+    resize: none;
+    margin-bottom: 1.5vw;
+}
+
+.quote-form label {
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    display: block;
+}
+
+input[type="file"] {
+    background: white;
+    color: black;
+    padding: 0.6vw;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    margin-bottom: 1.5vw;
+}
+
+.submit-btn {
+    padding: 0.8vw 2vw;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background: rgb(34, 34, 34);
+}
+
+@media screen and (max-width: 900px) {
+
+    .quote-section {
+        flex-direction: column;
+    }
+
+    .contact-info-boxes {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .quote-form {
+        width: 100%;
+    }
+
+    .inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-form h1 {
+        text-align: center;
+    }
+
+    textarea {
+        height: 30vw;
+    }
+}
