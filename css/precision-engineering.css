@@ -4,12 +4,10 @@
 }
 
 /* ===========HERO=========== */
-
 .slider {
     position: relative;
     width: 100%;
-    height: 50vh;
-    overflow: hidden;
+    height: 70vh;
     margin-bottom: 2vw;
 }
 
@@ -55,34 +53,40 @@
 
 .actions a {
     font-size: 1vw;
-    background-color: #18a0fb;
     text-decoration: none;
     border-radius: 1.6vw;
     padding: 0.8vw 1vw;
     color: black;
+    background-color: #18a0fb;
+    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.7);
 }
 
 .actions a:hover {
     background-color: #1585cf;
+    transition: 0.2s ease;
 }
 
 /* ===========Description=========== */
 .description {
     text-align: center;
     align-items: center;
-    font-size: 1.6vw;
-    line-height: 2vw;
     margin-bottom: 3.8vw;
 }
 
 .description h1 {
-    padding: 2.4vw 0;
+    font-size: 3.2vw;
+    padding: 1vw 0;
+}
+
+.description p{
+    font-size: 1.6vw;
+    line-height: 2vw;
 }
 
 /* ===== CAPABILITIES ===== */
 .capabilities {
-    background-color: #f5f5f5;
-    margin: 0 -3vw 7.5vw -3vw;
+    background-color: #ededed;
+    margin: 0 -3vw 5vw -3vw;
     padding: 7%;
 }
 
@@ -104,12 +108,129 @@
     padding: 1.8vw;
     border-left: 0.4vw solid red;
     font-size: 1.6vw;
+    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.5);
 }
 
 /* ===========Metal Welding About Us=========== */
+.machines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    margin-bottom: 4vw;
+}
+
+.machines-text h1 {
+    font-size: 3.2vw;
+    padding-bottom: 5vw;
+}
+
+.machines-text li {
+    margin-left: 3%;
+    padding: 2%;
+    font-size: 1.4vw;
+}
+
+.machines-img {
+    width: 40%;
+}
+
+.machines-img p {
+    font-size: 1vw;
+}
+
+.machines-img img {
+    width: 100%;
+    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.5vw;
+}
+
+/* ===========CNC APPLICATIONS=========== */
+.cnc-applications {
+    margin: 0 -3vw 7vw -3vw;
+    padding: 8%;
+    background-color: #ededed;
+}
+
+.cnc-applications h1 {
+    font-size: 3.2vw;
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+}
+
+.parts {
+    text-align: center;
+    font-size: 1.4vw;
+    padding: 1.8vw;   
+    background-color: #fbfbfb;
+    transition: 0.3s;
+    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+.parts:hover{
+    background-color: #a2a2a2;
+}
+
+/* ===========Why Us=========== */
+.why-cnc-us {
+    margin: 0 -3vw 5vw -3vw;
+}
+
+.why-cnc-us h2 {
+    font-size: 3vw;
+    padding-left: 5vw;
+}
+
+.underline {
+    width: 3vw;
+    border: 0.2vw solid red;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+.why-cnc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7vw;
+}
+
+.cnc-benefits,
+.why-us {
+    margin: auto;
+    background-color: #cbcbcb;
+    border-radius: 20px;
+    padding: 3vw;
+}
+
+.why-cnc-grid h2 {
+    font-size: 1.8vw;
+    border-left: 0.3vw solid red;
+    padding-left: 1vw;
+    margin-bottom: 2vw;
+}
+
+.why-cnc-grid li {
+    font-size: 1.24vw;
+    margin: 0 0 1.2vw 1vw;
+    padding: 0.5vw 0;
+}
+
+@media (max-width: 900px) {
+    .why-cnc-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===========Past Projects=========== */
 .pastProjects {
     text-align: center;
-    margin: 0 -3vw 7.5vw -3vw;
+    margin: 0 -3vw 5vw -3vw;
     padding: 0 5% 0 5%;
 }
 
@@ -132,35 +253,10 @@
     width: 100%;
 }
 
-/* ===========Metal Working Example=========== */
-.metalWorksExamples {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 95px;
-    padding: 0 58px 0 58px;
-}
-
-.metalWorksExamples-box {
-    text-align: center;
-}
-
-.metalWorksExamples-box h1 {
-    font-size: 48px;
-    margin-bottom: 55px;
-    letter-spacing: -0.015em;
-}
-
-.metalWorksExamples-box p {
-    margin-bottom: 65px;
-    font-size: 16px;
-    line-height: 152.63%;
-    letter-spacing: -0.015em;
-}
-
 /* ===== CTA ===== */
 .cta {
-    background: #111;
-    color: #fff;
+    background-color: black;
+    color: white;
     text-align: center;
     margin: 0 -3vw 0 -3vw;
     padding: 15% 5% 15% 5%;
@@ -177,13 +273,15 @@
 
 .cta a:hover {
     background-color: #1585cf;
+    transition: 0.2s ease;
 }
 
-.cta h1{
+.cta h1 {
     font-size: 2.8vw;
+    margin-bottom: 1vw;
 }
 
-.cta p{
+.cta p {
     font-size: 1.4vw;
     margin-bottom: 2.4vw;
 }
