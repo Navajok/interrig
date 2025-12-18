@@ -81,7 +81,7 @@
     font-weight: bold;
 }
 
-.btn-learn:hover {iikk
+.btn-learn:hover {
     color: white;
 }
 
@@ -238,7 +238,6 @@
     flex-direction: column;
     justify-content: center;
     background: #dcdcdc;
-    border: 2px solid red;
 }
 
 .contact-info h2 {

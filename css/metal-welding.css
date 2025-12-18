@@ -4,12 +4,10 @@
 }
 
 /* ===========HERO=========== */
-
 .slider {
     position: relative;
     width: 100%;
-    height: 36vh;
-    overflow: hidden;
+    height: 70vh;
     margin-bottom: 2vw;
 }
 
@@ -33,14 +31,38 @@
 
 .caption {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    top: 25%;
+    left: 5%;
     color: white;
+    min-width: 55vw;
 }
 
 .caption h1 {
-    font-size: 4.4vw;
+    font-size: 4vw;
+    padding-bottom: 1.6vw;
+}
+
+.caption {
+    font-size: 1.2vw;
+}
+
+.actions {
+    margin: 3.2vw 0;
+}
+
+.actions a {
+    font-size: 1vw;
+    text-decoration: none;
+    border-radius: 1.6vw;
+    padding: 0.8vw 1vw;
+    color: black;
+    background-color: #18a0fb;
+    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.7);
+}
+
+.actions a:hover {
+    background-color: #1585cf;
+    transition: 0.2s ease;
 }
 
 /* ===========Description=========== */

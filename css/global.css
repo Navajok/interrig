@@ -48,6 +48,8 @@ body {
 
 .nav-links a:hover {
   cursor: pointer;
+  color: #1277ba;
+  transition: 0.2s ease;
 }
 
 .dropdown {
@@ -56,11 +58,21 @@ body {
 
 .dropdown label {
   color: #18a0fb;
+}
+
+.dropdown label:hover {
   cursor: pointer;
+  color: #1277ba;
+  transition: 0.2s ease;
 }
 
 #triangle_symbol {
   color: white;
+}
+
+.dropdown label:hover #triangle_symbol{
+  color: rgb(203, 203, 203);
+  transition: 0.2s ease;
 }
 
 #services {
@@ -87,6 +99,7 @@ body {
 
 #triangle:checked~#services {
   display: block;
+  transition: 0.2s ease;
 }
 
 .nav-links .nav-contact {

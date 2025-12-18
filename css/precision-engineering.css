@@ -31,20 +31,16 @@
 
 .caption {
     position: absolute;
-    top: 50%;
-    left: 33%;
-    transform: translateY(-50%) translateX(-50%);
+    top: 25%;
+    left: 5%;
     color: white;
     min-width: 55vw;
+    font-size: 1.2vw;
 }
 
 .caption h1 {
     font-size: 4vw;
     padding-bottom: 1.6vw;
-}
-
-.caption {
-    font-size: 1.2vw;
 }
 
 .actions {
