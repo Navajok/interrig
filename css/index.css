@@ -1,5 +1,5 @@
 .section-head {
-  margin-bottom: 62px;
+  margin-bottom: 3vw;
   font-size: 3vw;
 }
 
@@ -8,11 +8,6 @@
     font-size: 55px;
   }
 } */
-
-hr {
-  height: 3px;
-  background-color: black;
-}
 
 /* ===========Hero=========== */
 
@@ -69,12 +64,11 @@ hr {
   position: absolute;
   top: 100%;
   padding: 0.8vh 1.8vw;
-  border: 2px solid white;
-  border-radius: 10px;
+  border: 0.2vw solid white;
+  border-radius: 0.6vw;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  z-index: 1;
 }
 
 
@@ -89,14 +83,14 @@ hr {
     line-height: 25px;
   }
 } */
-
+  
 .prev,
 .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   background: transparent;
-  border: 2px solid white;
+  border: 0.2vw solid white;
   width: 3vw;
   height: 5.3vh;
   border-radius: 50%;
@@ -192,7 +186,7 @@ hr {
 /* ===========Metal Welding Homepage=========== */
 .metalWelding {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   margin-bottom: 7.5vw;
 }
@@ -212,12 +206,10 @@ hr {
 
 .metalWelding-img {
   width: 85%;
-  padding-right: -200px;
 }
 
 .metalWelding-text {
-  width: 107%;
-  margin-left: -50px;
+  margin-left: -3vw;
 }
 
 .metalWelding-img img {
@@ -238,23 +230,20 @@ hr {
 /* ===========TRUSTED BY=========== */
 .trustedBy {
   text-align: center;
-  margin-bottom: 100px;
-}
-
-.trustedlogos {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  border: 3px solid black;
-  border-radius: 20px;
-  padding: 1vw 0 1vw 0;
+  margin-bottom: 5vw;
 }
 
 .trustedlogos img {
   width: 100%;
+  border: 0.2vw solid black;
+  border-radius: 1.6vw;
 }
 
+.underline {
+  margin: -3vw 0 3vw 36vw; 
+  width: 4vw;
+  border: 0.2vw solid red;
+}
 
 /* ===========FEATURED=========== */
 .featured {
@@ -265,11 +254,14 @@ hr {
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 4.5vw;
 }
 
 .featuredProject img {
   border: 0.2vw solid black;
   width: 100%;
+}
+
+.projects-underline{
+  margin-left: 28.5vw;
 }
