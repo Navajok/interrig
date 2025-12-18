@@ -14,11 +14,6 @@ body {
 }
 
 /* ===========Nav Bar=========== */
-
-.header {
-  height: auto;
-}
-
 .nav-bar {
   background-color: black;
   display: flex;
@@ -70,7 +65,7 @@ body {
   color: white;
 }
 
-.dropdown label:hover #triangle_symbol{
+.dropdown label:hover #triangle_symbol {
   color: rgb(203, 203, 203);
   transition: 0.2s ease;
 }
@@ -90,7 +85,7 @@ body {
   display: block;
   font-size: 1vw;
   background-color: black;
-  border-bottom: 1px solid white;
+  border-bottom: 0.1vw solid white;
 }
 
 #triangle {
@@ -108,6 +103,65 @@ body {
   padding: 0.4vw 2.4vw;
 }
 
+#nav-toggle, .hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    padding: 3vw 5vw;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar img {    
+    width: 40vw;
+  }
+
+  .hamburger {
+    display: inline-block;
+    color: white;
+    font-size: 5vw;
+    cursor: pointer;
+    padding-left: 5vw;
+  }
+
+  .nav-links {
+    background-color: black;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+
+  #nav-toggle:checked~.nav-links {
+    display: flex;
+  }
+  
+  .nav-links li {
+    border-top: 0.1vw solid white;
+    text-align: center;
+  }
+
+  .nav-links a, .dropdown label {
+    display: block;
+    font-size: 4vw;
+    padding: 4vw 0;
+  }
+
+  #services li a {
+    font-size: 3.5vw;
+    background-color: #111;
+    border-bottom: none;
+    padding: 3vw 0;
+  }
+
+  .nav-links .nav-contact {
+    margin: 3vw auto;
+    width: 80%;
+    text-align: center;
+    padding: 3vw 0;
+    font-size: 4vw;
+  }
+}
 
 /* ===========FOOTER=========== */
 footer {
@@ -180,16 +234,49 @@ input[type="submit"] {
   color: white;
 }
 
-/* @media screen and (min-width:1920px){
-  #services li a{
-    font-size: 20px
+@media (max-width: 768px) {
+  footer {
+    padding: 8vw 4vw;
   }
 
-  .footer-col h3{
-    font-size: 25px
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6vw;
   }
 
-  .footer-col p, .contact-form label, input[type="email"], input[type="submit"]{
-    font-size: 18px;
+  .footer-col {
+    width: 100%;
   }
-} */
+
+  .logo-black img {
+    width: 55vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .footer-col h3 {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+
+  .footer-col p {
+    font-size: 2.6vw;
+    line-height: 5.5vw; 
+  }
+
+  .contact-form label {
+    font-size: 2.6vw;
+  }
+
+  .contact-form input[type="email"] {
+    font-size: 3vw;
+    padding: 3.5vw;
+  }
+
+  .contact-form input[type="submit"] {
+    font-size: 3vw;
+    padding: 1.6vw 3.2vw;
+  }
+}
