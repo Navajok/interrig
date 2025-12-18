@@ -1,0 +1,267 @@
+.section-head {
+  margin-bottom: 3vw;
+  font-size: 3vw;
+}
+
+/* @media screen and (min-width:1920px) {
+  .section-head {
+    font-size: 55px;
+  }
+} */
+
+/* ===========Hero=========== */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 87vh;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.caption {
+  position: absolute;
+  top: 39vh;
+  left: 10%;
+  color: white;
+
+}
+
+.caption h1 {
+  font-size: 2.4vw;
+  margin-bottom: 1vw;
+}
+
+.caption p {
+  font-size: 1vw;
+  margin-bottom: 1.2vw;
+  line-height: 1.2vw;
+}
+
+.btn {
+  font-size: 1vw;
+  position: absolute;
+  top: 100%;
+  padding: 0.8vh 1.8vw;
+  border: 0.2vw solid white;
+  border-radius: 0.6vw;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* @media screen and (min-width:1920px) {
+  .caption h1 {
+    font-size: 45px;
+  }
+
+  .caption p,
+  .btn {
+    font-size: 22px;
+    line-height: 25px;
+  }
+} */
+  
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0.2vw solid white;
+  width: 3vw;
+  height: 5.3vh;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+
+.prev {
+  left: 3vw;
+}
+
+.next {
+  right: 3vw;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===========Companies=========== */
+
+.companies img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 8vw;
+}
+
+/* ===========Headline=========== */
+.headline {
+  text-align: center;
+  margin: 0 20px 8vw 20px;
+}
+
+.headline h1 {
+  font-size: 2.4vw;
+  margin-bottom: 1.6vw;
+}
+
+.headline p {
+  font-size: 1.6vw;
+  line-height: 2vw;
+}
+
+/* @media screen and (min-width:1920px) {
+  .headline h1 {
+    font-size: 45px;
+  }
+
+  .headline p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+} */
+
+/* ===========Service=========== */
+.services {
+  text-align: center;
+  margin-bottom: 9vw;
+}
+
+.services h1 {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1vw;
+  text-underline-offset: 0.2vw;
+  margin-bottom: 4vw;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1, 1fr;
+  column-gap: 10%;
+}
+
+.grid-box img {
+  border: 0.3vw solid black;
+  margin-bottom: 1.2vw;
+  width: 100%;
+}
+
+.grid-box p {
+  font-size: 1.4vw;
+}
+
+/* @media screen and (min-width:1920px) {
+  .grid-box p {
+    font-size: 25px;
+  } */
+
+
+/* ===========Metal Welding Homepage=========== */
+.metalWelding {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 7.5vw;
+}
+
+.metalWelding-text h1 {
+  font-size: 3.3vw;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1vw;
+  text-underline-offset: 0.2vw;
+  margin-bottom: 1vw;
+}
+
+.metalWelding-text p {
+  font-size: 1vw;
+  line-height: 152.63%;
+}
+
+.metalWelding-img {
+  width: 85%;
+}
+
+.metalWelding-text {
+  margin-left: -3vw;
+}
+
+.metalWelding-img img {
+  width: 100%;
+}
+
+/* @media screen and (min-width:1920px) {
+  .metalWelding-text h1 {
+    font-size: 60px;
+  }
+
+  .metalWelding-text p {
+    font-size: 20px;
+  }
+} */
+
+
+/* ===========TRUSTED BY=========== */
+.trustedBy {
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.trustedlogos img {
+  width: 100%;
+  border: 0.2vw solid black;
+  border-radius: 1.6vw;
+}
+
+.underline {
+  margin: -3vw 0 3vw 36vw; 
+  width: 4vw;
+  border: 0.2vw solid red;
+}
+
+/* ===========FEATURED=========== */
+.featured {
+  text-align: center;
+  margin-bottom: 8vw;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5vw;
+}
+
+.featuredProject img {
+  border: 0.2vw solid black;
+  width: 100%;
+}
+
+.projects-underline{
+  margin-left: 28.5vw;
+}
