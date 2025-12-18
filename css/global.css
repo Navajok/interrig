@@ -139,6 +139,7 @@ body {
   .nav-links li {
     border-top: 0.1vw solid white;
     text-align: center;
+    margin-bottom: -2vw;
   }
 
   .nav-links a, .dropdown label {
@@ -161,6 +162,7 @@ body {
     padding: 3vw 0;
     font-size: 4vw;
   }
+  
 }
 
 /* ===========FOOTER=========== */
@@ -234,7 +236,7 @@ input[type="submit"] {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   footer {
     padding: 8vw 4vw;
   }
@@ -277,6 +279,6 @@ input[type="submit"] {
 
   .contact-form input[type="submit"] {
     font-size: 3vw;
-    padding: 1.6vw 3.2vw;
+    padding: 2vw;
   }
 }

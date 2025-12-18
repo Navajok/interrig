@@ -1,184 +1,184 @@
 .section-head {
-    margin-bottom: 2.3vw;
-    font-size: 3vw;
+  margin-bottom: 2.3vw;
+  font-size: 3vw;
 }
 
 /* ===========HERO=========== */
 .slider {
-    position: relative;
-    height: 30vw;
-    overflow: hidden;
-    margin-bottom: 6.7vw;
+  position: relative;
+  height: 30vw;
+  overflow: hidden;
+  margin-bottom: 6.7vw;
 }
 
 .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: white;
 }
 
 .caption h1 {
-    font-size: 4.4vw;
+  font-size: 4.4vw;
 }
 
 /* --- OVERVIEW SECTION STYLES --- */
 
 .overview-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 170px;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 170px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .overview-text {
-    flex: 1;
+  flex: 1;
 }
 
 .overview-text h2 {
-    font-size: 3.5vw;
-    color: black;
-    margin-bottom: 15px;
+  font-size: 3.5vw;
+  color: black;
+  margin-bottom: 15px;
 }
 
 .overview-text p {
-    font-size: 1.2vw;
-    margin-bottom: 30px;
-    letter-spacing: -0.015em;
+  font-size: 1.2vw;
+  margin-bottom: 30px;
+  letter-spacing: -0.015em;
 }
 
 
 .btn-learn {
-    font: inherit;
-    background-color: transparent;
-    border: 3px solid black;
-    padding: 1vw 1.6vw;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 1.6vw;
-    font-size: 1.2vw;
-    font-weight: bold;
+  font: inherit;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 1vw 1.6vw;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 1.6vw;
+  font-size: 1.2vw;
+  font-weight: bold;
 }
 
 .btn-learn:hover {
-    color: white;
+  color: white;
 }
 
 .overview-images {
-    flex: 1;
+  flex: 1;
 }
 
 .overview-images img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* ===========Qualities=======  ==== */
 .qualities {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10vw;
-    margin-bottom: 4vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10vw;
+  margin-bottom: 4vw;
 }
 
 .quality-box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .quality-box img {
-    height: 11vh;
-    width: 25%;
-    margin-left: -1.4vw;
+  height: 11vh;
+  width: 25%;
+  margin-left: -1.4vw;
 }
 
 
 .quality-box-text {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .quality-box-text h3 {
-    font-variant: small-caps;
-    font-size: 1.4vw;
-    margin-bottom: 20px;
-    width: 105%;
+  font-variant: small-caps;
+  font-size: 1.4vw;
+  margin-bottom: 20px;
+  width: 105%;
 }
 
 .quality-box-text p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9vw;
-    margin-right: -22px;
-    line-height: 1.4vw;
-    letter-spacing: 0.05em;
-    width: 120%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9vw;
+  margin-right: -22px;
+  line-height: 1.4vw;
+  letter-spacing: 0.05em;
+  width: 120%;
 }
 
 /* ===========Metal Welding About Us=========== */
 .metalWelding {
-    background-color: #D9D9D9;
-    margin: 0 -3vw 7.5vw -3vw;
-    padding: 0 5% 0 5%;
+  background-color: #D9D9D9;
+  margin: 0 -3vw 7.5vw -3vw;
+  padding: 0 5% 0 5%;
 }
 
 .metalWelding-header {
-    text-align: center;
-    padding: 5% 0 5% 0;
-    font-size: 2vw;
+  text-align: center;
+  padding: 5% 0 5% 0;
+  font-size: 2vw;
 }
 
 .metalWelding-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-bottom: 5%;
 }
 
 .metalWelding-text h1 {
-    font-size: 3.3vw;
-    text-decoration: underline;
-    text-underline-offset: 0.2vw;
-    text-decoration-thickness: 0.1vw;
-    margin-bottom: 14px;
+  font-size: 3.3vw;
+  text-decoration: underline;
+  text-underline-offset: 0.2vw;
+  text-decoration-thickness: 0.1vw;
+  margin-bottom: 14px;
 }
 
 .metalWelding-text p {
-    font-size: 1vw;
-    line-height: 152.63%;
+  font-size: 1vw;
+  line-height: 152.63%;
 }
 
 .metalWelding-img {
-    width: 85%;
-    padding-right: -200px;
+  width: 85%;
+  padding-right: -200px;
 }
 
 .metalWelding-text {
-    width: 107%;
-    margin-left: -50px;
+  width: 107%;
+  margin-left: -50px;
 }
 
 .metalWelding-img img {
-    width: 100%;
+  width: 100%;
 }
 
 /* @media screen and (min-width:1920px) {
@@ -199,66 +199,206 @@
 
 /* ===========TRUSTED BY=========== */
 .trustedBy {
-    text-align: center;
-    margin-bottom: 100px;
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 .trustedlogos {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    border: 3px solid black;
-    border-radius: 20px;
-    padding: 1vw 0 1vw 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 1vw 0 1vw 0;
 }
 
 .trustedlogos img {
-    width: 100%;
+  width: 100%;
 }
 
 /* ===========LOCATION=========== */
 .contact-section {
-    display: flex;
-    justify-content: space-between;
-    height: 39vh;
-    background-color: #D9D9D9;
-    margin: 0 -3vw 0 -3vw;
+  display: flex;
+  justify-content: space-between;
+  height: 39vh;
+  background-color: #D9D9D9;
+  margin: 0 -3vw 0 -3vw;
 }
 
 .contact-map {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-info {
-    font-family: Poppins, sans-serif;
-    flex: 1;
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #dcdcdc;
+  font-family: Poppins, sans-serif;
+  flex: 1;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #dcdcdc;
 }
 
 .contact-info h2 {
-    font-size: 2.8vw;
+  font-size: 2.8vw;
 }
 
 .underline {
-    width: 2.6vw;
-    border: 0.2vw solid black;
-    margin: 1vw 0 1vw 0;
+  width: 2.6vw;
+  border: 0.2vw solid black;
+  margin: 1vw 0 1vw 0;
 }
 
 .contact-info p {
-    font-size: 1vw;
-    letter-spacing: 0.14em;
-    margin: 0.5vw 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5vw;
+  font-size: 1vw;
+  letter-spacing: 0.14em;
+  margin: 0.5vw 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
 }
 
 .contact-info img {
-    width: 2vw;
+  width: 2vw;
+}
+
+/* ================= MOBILE ONLY ================= */
+@media screen and (max-width: 768px) {
+
+  /* ===== HERO ===== */
+  .slider {
+    height: 50vw;
+    margin-bottom: 12vw;
+  }
+
+  .caption h1 {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  /* ===== OVERVIEW ===== */
+  .overview-section {
+    flex-direction: column;
+    gap: 8vw;
+    margin-bottom: 20vw;
+  }
+
+  .overview-text h2 {
+    font-size: 6vw;
+  }
+
+  .overview-text p {
+    font-size: 3.2vw;
+    line-height: 4vw;
+  }
+
+  .btn-learn {
+    font-size: 3.2vw;
+    padding: 2vw 4vw;
+    border-radius: 4vw;
+  }
+
+  /* ===== QUALITIES ===== */
+  .qualities {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+  }
+
+  .quality-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quality-box img {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .quality-box-text {
+    margin-left: 0;
+  }
+
+  .quality-box-text h3 {
+    font-size: 4.5vw;
+  }
+
+  .quality-box-text p {
+    font-size: 3.8vw;
+    line-height: 5.5vw;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* ===== METAL WELDING ===== */
+  .metalWelding {
+    padding: 10vw 5vw;
+  }
+
+  .metalWelding-content {
+    grid-template-columns: 1fr;
+    gap: 8vw;
+    text-align: center;
+  }
+
+  .metalWelding-header {
+    font-size: 5vw;
+  }
+
+  .metalWelding-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .metalWelding-text h1 {
+    font-size: 6vw;
+  }
+
+  .metalWelding-text p {
+    font-size: 3.8vw;
+    line-height: 6vw;
+  }
+
+  .metalWelding-img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  /* ===== TRUSTED BY ===== */
+  .section-head {
+    font-size: 6vw;
+  }
+
+  .trustedlogos {
+    padding: 4vw;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-map {
+    height: 40vh;
+  }
+
+  .contact-info h2 {
+    font-size: 6vw;
+  }
+
+  .contact-info p {
+    font-size: 3.8vw;
+    letter-spacing: 0.08em;
+  }
+
+  .contact-info img {
+    width: 5vw;
+  }
+
+  .underline {
+    width: 10vw;
+    border-width: 0.5vw;
+  }
 }
