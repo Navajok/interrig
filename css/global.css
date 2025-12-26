@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  margin: 0 3vw;
+  margin: 0 5vw;
 }
 
 /* ===========Nav Bar=========== */
@@ -99,8 +99,14 @@ body {
 
 .nav-links .nav-contact {
   color: white;
+  border: 0.1vw solid #18a0fb;
   background-color: #18a0fb;
   padding: 0.4vw 2.4vw;
+  transition: 0.2s ease;
+}
+
+.nav-contact:hover{
+  background-color: black ;
 }
 
 #nav-toggle, .hamburger {
@@ -178,13 +184,12 @@ footer {
 }
 
 .logo-black img {
-  width: 15vw;
-  height: 10vw;
-  margin-top: -60px;
+  width: 100%;
 }
 
 .logo-black {
   overflow: hidden;
+  width: 20%;
 }
 
 .footer-col h3 {

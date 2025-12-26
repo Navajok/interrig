@@ -33,101 +33,103 @@
             <li><a href="industrial-supply.html">Industrial Supply</a></li>
           </ul>
         </li>
-        
+
         <li><a href="contact.html" class="nav-contact">Contact Us</a></li>
       </ul>
     </nav>
 
-  <section class="quote-section">
+    <section class="quote-section">
 
-    <div class="contact-info-boxes">
+      <div class="contact-info-boxes">
 
-      <div class="contact-box">
-        <img src="images/contactus1.png" alt="">
-        <h3>Location</h3>
-        <p>63 Tessensohn Road<br>Singapore 217665</p>
+        <div class="contact-box">
+          <img src="images/contactus1.png" alt="">
+          <h3>Location</h3>
+          <p>63 Tessensohn Road<br>Singapore 217665</p>
+        </div>
+
+        <div class="contact-box">
+          <img src="images/contactus2.png" alt="">
+          <h3>Phone Number</h3>
+          <p>+65 6288 3968 (5 Lines)</p>
+        </div>
+
+        <div class="contact-box">
+          <img src="images/contactus3.png" alt="">
+          <h3>Email</h3>
+          <p>interrig@singnet.com.sg</p>
+        </div>
+
+        <div class="contact-box">
+          <img src="images/contactus4.png" alt="">
+          <h3>Working Hours</h3>
+          <p>Monday to Friday<br>8:00AM - 5:30PM</p>
+        </div>
+
       </div>
 
-      <div class="contact-box">
-        <img src="images/contactus2.png" alt="">
-        <h3>Phone Number</h3>
-        <p>+65 6288 3968 (5 Lines)</p>
+      <div class="quote-form">
+        <h1>Get A Quote</h1>
+
+        <div class="underline"></div>
+        <form action="https://formspree.io/f/xzznargk" method="POST" enctype="multipart/form-data">
+          <div class="inputs">
+            <input type="text" placeholder="Name" name="Name" required>
+            <input type="text" placeholder="Phone" name="Phone" required>
+            <input type="email" placeholder="Email" name="Email" required>
+          </div>
+
+          <label for="Drawings">Drawings</label>
+          <input type="file" name="Drawings" id="Drawings" multiple>
+
+          <textarea placeholder="Message" name="Message" required></textarea>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
       </div>
 
-      <div class="contact-box">
-        <img src="images/contactus3.png" alt="">
-        <h3>Email</h3>
-        <p>interrig@singnet.com.sg</p>
+    </section>
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col logo-black">
+          <img src="images/logo-black.png" alt="Inter-Rig Supply and Engineering">
+        </div>
+
+        <div class="footer-col">
+          <h3>Main Office</h3>
+          <p>+65 6288 3968 (5 Lines)<br>
+            interrig@singnet.com.sg<br><br>
+            63 Tessensohn Road<br>
+            Singapore 217665</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Metal Work</h3>
+          <p>+65 6242 8917 <br><br>
+            Blk 3018 Bedok North St 5 <br>
+            #03-51 <br>
+            Singapore 486132</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Engineering Work</h3>
+          <p>+65 6285 8276 <br><br>
+            Blk 38 Defu Lane 10 <br>
+            #02-31 <br>
+            Singapore 539215</p>
+        </div>
+
+        <div class="footer-col contact-form">
+          <h3>Contact</h3>
+          <label for="email">Enter your email address</label>
+          <input type="email" id="email" name="email">
+          <input type="submit" value="Submit">
+        </div>
       </div>
-
-      <div class="contact-box">
-        <img src="images/contactus4.png" alt="">
-        <h3>Working Hours</h3>
-        <p>Monday to Friday<br>8:00AM - 5:30PM</p>
-      </div>
-
-    </div>
-
-    <div class="quote-form">
-      <h1>Get A Quote</h1>
-
-      <div class="underline"></div>
-
-      <div class="inputs">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Phone">
-        <input type="email" placeholder="Email">
-      </div>
-
-      <label for="Drawings">Drawings</label>
-      <input type="file" name="Drawings" id="Drawings" multiple>
-
-      <textarea placeholder="Message"></textarea>
-
-      <button class="submit-btn">Submit</button>
-    </div>
-
-  </section>
-
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-col logo-black">
-        <img src="images/logo-black.png" alt="Inter-Rig Supply and Engineering">
-      </div>
-
-      <div class="footer-col">
-        <h3>Main Office</h3>
-        <p>+65 6288 3968 (5 Lines)<br>
-          interrig@singnet.com.sg<br><br>
-          63 Tessensohn Road<br>
-          Singapore 217665</p>
-      </div>
-
-      <div class="footer-col">
-        <h3>Metal Work</h3>
-        <p>+65 6242 8917 <br><br>
-          Blk 3018 Bedok North St 5 <br>
-          #03-51 <br>
-          Singapore 486132</p>
-      </div>
-
-      <div class="footer-col">
-        <h3>Engineering Work</h3>
-        <p>+65 6285 8276 <br><br>
-          Blk 38 Defu Lane 10 <br>
-          #02-31 <br>
-          Singapore 539215</p>
-      </div>
-
-      <div class="footer-col contact-form">
-        <h3>Contact</h3>
-        <label for="email">Enter your email address</label>
-        <input type="email" id="email" name="email">
-        <input type="submit" value="Submit">
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

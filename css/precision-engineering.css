@@ -3,6 +3,11 @@
     font-size: 3vw;
 }
 
+.underline {
+    width: 3vw;
+    border: 0.2vw solid red;
+}
+
 /* ===========HERO=========== */
 .slider {
     position: relative;
@@ -71,7 +76,6 @@
 
 .description h1 {
     font-size: 3.2vw;
-    padding: 1vw 0;
 }
 
 .description p {
@@ -79,16 +83,23 @@
     line-height: 2vw;
 }
 
+.line_description {
+    margin: 0 auto 1vw;
+}
+
 /* ===== CAPABILITIES ===== */
 .capabilities {
     background-color: #ededed;
-    margin: 0 -3vw 5vw -3vw;
+    margin: 0 -5vw 0 -5vw;
     padding: 7%;
 }
 
 .capabilities h1 {
     font-size: 3.2vw;
-    margin-bottom: 3.6vw;
+}
+
+.why_capabilities {
+    margin-bottom: 4vw;
 }
 
 .card-grid {
@@ -103,8 +114,14 @@
     background-color: white;
     padding: 1.8vw;
     border-left: 0.4vw solid red;
-    font-size: 1.6vw;
-    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.5);
+    font-size: 1.2vw;
+    box-shadow: 0.3vw 0.3vw 1.2vw rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-0.6vw);
+    box-shadow: 0.6vw 0.6vw 1.6vw rgba(0, 0, 0, 0.55);
 }
 
 /* ===========Metal Welding About Us=========== */
@@ -112,19 +129,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4%;
-    margin-bottom: 4vw;
+    padding: 5% 3%;
 }
 
 .machines-text h1 {
     font-size: 3.2vw;
-    padding-bottom: 5vw;
+}
+
+.why_machines {
+    margin-bottom: 5vw;
+}
+
+.machines-text ul {
+    list-style: none;
 }
 
 .machines-text li {
-    margin-left: 3%;
-    padding: 2%;
-    font-size: 1.4vw;
+    padding: 2% 0 2% 0;
+    font-size: 1.5vw;
+}
+
+.machines-text b {
+    color: rgb(0, 162, 0);
+}
+
+.machines-text p {
+    font-size: 1vw;
 }
 
 .machines-img {
@@ -141,36 +171,227 @@
     margin-bottom: 0.5vw;
 }
 
-/* ===========CNC APPLICATIONS=========== */
+/* =========== CNC APPLICATIONS =========== */
 .cnc-applications {
-    margin: 0 -3vw 7vw -3vw;
-    padding: 8%;
-    background-color: #ededed;
+    margin: 0 -5vw 7vw -5vw;
+    padding: 0 8%;
 }
 
 .cnc-applications h1 {
     font-size: 3.2vw;
     text-align: center;
-    margin-bottom: 4vw;
+}
+
+.why_applications {
+    margin-left: 6vw;
+}
+
+.applications-intro {
+    margin: 1vw 0 5vw 0;
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.6vw;
 }
 
 .applications-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+}
+
+.application-card {
+    padding: 3vw;
+    border-radius: 1vw;
+    border-left: 0.5vw solid red;
+    box-shadow: 0.3vw 0.3vw 1.2vw rgba(0, 0, 0, 0.45);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.application-card::before {
+    content: "CNC";
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 0.9vw;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.2vw;
+}
+
+.application-card:hover {
+    transform: translateY(-0.6vw);
+    box-shadow: 0.6vw 0.6vw 1.6vw rgba(0, 0, 0, 0.55);
+}
+
+.application-card h2 {
+    font-size: 1.8vw;
+    margin-bottom: 1.4vw;
+}
+
+.application-card p {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cnc-applications h1 {
+        font-size: 7vw;
+    }
+
+    .applications-intro {
+        font-size: 3.5vw;
+        line-height: 6vw;
+    }
+
+    .applications-grid {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .application-card {
+        padding: 5vw;
+    }
+
+    .application-card h2 {
+        font-size: 5vw;
+    }
+
+    .application-card p {
+        font-size: 3.4vw;
+        line-height: 5.6vw;
+    }
+
+    .application-card::before {
+        font-size: 2.5vw;
+        top: 2vw;
+        right: 2vw;
+    }
+}
+
+/* ========== INDUSTRIES ========== */
+.industries {
+    margin: 0 -5vw 7vw -5vw;
+    padding: 8%;
+    background-color: #ededed;
+}
+
+.industries h1 {
+    font-size: 3.2vw;
+    text-align: center;
+}
+
+.industries_underline{
+    margin: 0 auto;
+}
+
+.industries-intro {
+    max-width: 70vw;
+    margin: 0 auto 4vw auto;
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.6vw;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5vw;
+}
+
+.industry-card {
+    background: white;
+    padding: 2.5vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+    text-align: center;
+    border-left: 0.4vw solid red;
+    border-radius: 0.8vw;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.industry-card:hover {
+    transform: translateY(-0.5vw);
+}
+
+/* ========== MATERIALS ========== */
+.materials {
+    margin-bottom: 7vw;
+    padding: 0 8%;
+}
+
+.materials h1 {
+    text-align: center;
+}
+
+.materials-intro {
+    max-width: 70vw;
+    margin: 0 auto 4vw auto;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 2.6vw;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3vw;
 }
 
-.parts {
-    text-align: center;
-    font-size: 1.4vw;
-    padding: 1.8vw;
-    background-color: #fbfbfb;
-    transition: 0.3s;
-    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.5);
+.material-card {
+    background: #f7f7f7;
+    padding: 2.8vw;
+    font-size: 1.6vw;
+    border-radius: 1vw;
+    box-shadow: inset 0 0 0 0.2vw #ccc;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.parts:hover {
-    background-color: #a2a2a2;
+.material-card span {
+    display: block;
+    font-size: 1.3vw;
+    margin-top: 0.8vw;
+    color: #555;
+}
+
+.material-card:hover {
+    background: white;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.4);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .industries-intro,
+    .materials-intro {
+        font-size: 3.5vw;
+        line-height: 6vw;
+    }
+
+    .industries-grid {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .industry-card {
+        font-size: 4vw;
+        padding: 4vw;
+    }
+
+    .materials-grid {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .material-card {
+        font-size: 4vw;
+        padding: 4vw;
+    }
+
+    .material-card span {
+        font-size: 3.2vw;
+    }
 }
 
 /* ===========Why Us=========== */
@@ -183,9 +404,7 @@
     padding-left: 5vw;
 }
 
-.underline {
-    width: 3vw;
-    border: 0.2vw solid red;
+.why_underline {
     margin-left: 5vw;
     margin-bottom: 5vw;
 }
@@ -211,15 +430,82 @@
 }
 
 .why-cnc-grid li {
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     margin: 0 0 1.2vw 1vw;
     padding: 0.5vw 0;
+}
+
+/* ========= QUALITY ASSURANCE ========= */
+.quality-assurance {
+    padding: 7vw 8vw;
+}
+
+.quality-assurance h1 {
+    text-align: center;
+}
+
+.qa-intro {
+    max-width: 70vw;
+    margin: 0 auto 4vw auto;
+    text-align: center;
+    font-size: 1.4vw;
+    line-height: 2.4vw;
+}
+
+.qa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+}
+
+.qa-card {
+    background: white;
+    padding: 3vw;
+    border-top: 0.4vw solid red;
+    border-radius: 1vw;
+    box-shadow: 0.3vw 0.3vw 1.2vw rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+.qa-card:hover {
+    transform: translateY(-0.6vw);
+}
+
+.qa-card h2 {
+    font-size: 1.8vw;
+    margin-bottom: 1.2vw;
+}
+
+.qa-card p {
+    font-size: 1.3vw;
+    line-height: 2.3vw;
+}
+
+@media (max-width: 768px) {
+    .qa-intro {
+        font-size: 3.5vw;
+        line-height: 6vw;
+    }
+
+    .qa-grid {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .qa-card h2 {
+        font-size: 4.8vw;
+    }
+
+    .qa-card p {
+        font-size: 3.4vw;
+        line-height: 5.6vw;
+    }
 }
 
 /* ===========Past Projects=========== */
 .pastProjects {
     text-align: center;
-    margin: 0 -3vw 5vw -3vw;
+    margin: 0 -5vw 5vw -5vw;
     padding: 0 5% 0 5%;
 }
 
@@ -247,7 +533,7 @@
     background-color: black;
     color: white;
     text-align: center;
-    margin: 0 -3vw 0 -3vw;
+    margin: 0 -5vw 0 -5vw;
     padding: 15% 5% 15% 5%;
 }
 
@@ -401,10 +687,12 @@
         font-size: 3vw;
     }
 
-    .cnc-benefits, .why-us{
-        padding:4vw;
+    .cnc-benefits,
+    .why-us {
+        padding: 4vw;
         min-width: 80vw;
     }
+
     /* ===== QUALITY ASSURANCE ===== */
     .qa-grid {
         grid-template-columns: 1fr;

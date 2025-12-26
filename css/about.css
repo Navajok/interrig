@@ -137,7 +137,7 @@
 /* ===========Metal Welding About Us=========== */
 .metalWelding {
   background-color: #D9D9D9;
-  margin: 0 -3vw 7.5vw -3vw;
+  margin: 0 -5vw 7.5vw -5vw;
   padding: 0 5% 0 5%;
 }
 
@@ -223,7 +223,7 @@
   justify-content: space-between;
   height: 39vh;
   background-color: #D9D9D9;
-  margin: 0 -3vw 0 -3vw;
+  margin: 0 -5vw 0 -5vw;
 }
 
 .contact-map {
