@@ -673,3 +673,75 @@
         border-radius: 8vw;
     }
 }
+
+/* ===================== DESKTOP ===================== */
+@media screen and (min-width: 1920px) {
+
+  h1 {
+    font-size: 2.6vw;
+  }
+
+  h2 {
+    font-size: 1.8vw;
+  }
+
+  p,
+  li {
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+
+  .caption h1 {
+    font-size: 3vw;
+  }
+
+  .caption {
+    font-size: 1vw;
+  }
+
+  .actions a {
+    font-size: 0.9vw;
+    padding: 0.6vw 1.2vw;
+  }
+
+  .fabrication-solutions h1,
+  .materials-section h1,
+  .industries h1,
+  .cnc-applications h1,
+  .AnB h1,
+  .metalWorks-header h1,
+  .cta h1 {
+    font-size: 2.6vw;
+  }
+
+  .industry-name {
+    font-size: 1.2vw;
+  }
+
+  .industry-desc {
+    font-size: 1vw;
+  }
+
+  .application-card h2 {
+    font-size: 1.6vw;
+  }
+
+  .application-card p {
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+
+  .cta p {
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+
+  .cta-btn {
+    font-size: 1.1vw;
+    padding: 1vw 2.5vw;
+  }
+}
