@@ -213,8 +213,8 @@ footer {
 }
 
 .contact-form label,
-input[type="email"],
-input[type="submit"] {
+.contact-form input[type="email"],
+.contact-form input[type="submit"] {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.14em;
   font-size: 1vw;

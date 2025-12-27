@@ -106,6 +106,7 @@
     border: none;
     border-radius: 0.4vw;
     font-size: 1vw;
+    font: inherit;
 }
 
 .quote-form label {
@@ -115,7 +116,7 @@
 }
 
 textarea {
-    height: 11vw;
+    height: 10vw;
     resize: none;
     margin-bottom: 1.5vw;
 }
@@ -123,8 +124,6 @@ textarea {
 input[type="file"] {
     background: white;
     color: black;
-    padding: 0.6vw;
-    border-radius: 0.4vw;
     cursor: pointer;
     margin-bottom: 1.5vw;
 }
@@ -147,13 +146,17 @@ input[type="file"] {
 /* =========== MOBILE RESPONSIVE =========== */
 @media (max-width: 768px) {
 
+    .caption h1 {
+        font-size: 7cqi;
+    }
+
     .quote-section {
         flex-direction: column;
         gap: 8vw;
         padding: 8vw 6vw;
     }
 
-    /* CONTACT BOXES */
+    /* CONTACT INFO BOXES */
     .contact-info-boxes {
         width: 100%;
         grid-template-columns: 1fr;
@@ -179,7 +182,7 @@ input[type="file"] {
         line-height: 5.5vw;
     }
 
-    /* FORM */
+    /* ===== QUOTE FORM ===== */
     .quote-form {
         width: 100%;
     }
@@ -216,12 +219,6 @@ input[type="file"] {
 
     textarea {
         height: 35vw;
-    }
-
-    input[type="file"] {
-        font-size: 3.8vw;
-        padding: 3vw;
-        border-radius: 2vw;
     }
 
     .submit-btn {
