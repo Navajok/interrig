@@ -295,3 +295,72 @@ footer {
     padding: 2vw;
   }
 }
+
+/* ==================== DESKTOP ==================== */
+@media screen and (min-width: 1920px) {
+
+  .nav-bar {
+    padding: 1.5vw 5vw;
+  }
+
+  .nav-bar img {
+    width: 12vw;
+  }
+
+  .nav-links {
+    font-size: 1vw;
+    gap: 2vw;
+  }
+
+  .nav-links a {
+    padding: 0.3vw 0.5vw;
+  }
+
+  #services li a {
+    font-size: 0.9vw;
+    padding: 0.5vw 0;
+  }
+
+  .nav-links .nav-contact {
+    padding: 0.3vw 1.5vw;
+    font-size: 0.9vw;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2vw 5vw;
+  }
+
+  .footer-content {
+    gap: 2vw;
+  }
+
+  .logo-black {
+    width: 12%;
+  }
+
+  .footer-col h3 {
+    font-size: 0.9vw;
+  }
+
+  .footer-col p {
+    font-size: 0.8vw;
+    line-height: 1.5vw;
+  }
+
+  .contact-form label,
+  .contact-form input[type="email"],
+  .contact-form input[type="submit"] {
+    font-size: 0.8vw;
+  }
+
+  .contact-form input[type="email"] {
+    padding: 0.8vw 1vw;
+    border-radius: 0.3vw;
+  }
+
+  .contact-form input[type="submit"] {
+    padding: 0.7vw 1.5vw;
+    border-radius: 0.3vw;
+  }
+}
