@@ -851,7 +851,7 @@
 
     /* ---------- CTA ---------- */
     .cta h1 {
-        font-size: 7;
+        font-size: 7vw;
     }
 
     .cta p {
@@ -865,4 +865,5 @@
         padding: 3vw 8vw;
         border-radius: 8vw;
     }
+
 }
