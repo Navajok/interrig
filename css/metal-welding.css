@@ -674,74 +674,137 @@
     }
 }
 
-/* ===================== DESKTOP ===================== */
+
+/* ===================== LARGE SCREENS (1920px+) ===================== */
 @media screen and (min-width: 1920px) {
 
-  h1 {
-    font-size: 2.6vw;
-  }
+    /* --- Base scale control --- */
+    html {
+        font-size: 14.5px; /* was effectively ~16px */
+    }
 
-  h2 {
-    font-size: 1.8vw;
-  }
+    /* ---------- GLOBAL ---------- */
+    p,
+    li {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
 
-  p,
-  li {
-    font-size: 1vw;
-    line-height: 2vw;
-  }
+    /* ---------- HERO ---------- */
+    .caption h1 {
+        font-size: 2.6rem; /* was ~3.6vw */
+    }
 
-  .slider {
-    height: 60vh;
-  }
+    .caption {
+        font-size: 1rem;
+    }
 
-  .caption h1 {
-    font-size: 3vw;
-  }
+    .actions a {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.9rem;
+        border-radius: 1.2rem;
+    }
 
-  .caption {
-    font-size: 1vw;
-  }
+    /* ---------- SECTION HEADERS ---------- */
+    .fabrication-solutions h1,
+    .materials-section h1,
+    .industries h1,
+    .cnc-applications h1,
+    .AnB h1,
+    .metalWorks-header h1,
+    .cta h1 {
+        font-size: 2.2rem;
+    }
 
-  .actions a {
-    font-size: 0.9vw;
-    padding: 0.6vw 1.2vw;
-  }
+    /* ---------- FABRICATION ---------- */
+    .fabrication-intro,
+    .fabrication-note {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
 
-  .fabrication-solutions h1,
-  .materials-section h1,
-  .industries h1,
-  .cnc-applications h1,
-  .AnB h1,
-  .metalWorks-header h1,
-  .cta h1 {
-    font-size: 2.6vw;
-  }
+    .fabrication-list li {
+        font-size: 1rem;
+    }
 
-  .industry-name {
-    font-size: 1.2vw;
-  }
+    /* ---------- MATERIALS ---------- */
+    .materials-intro {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
 
-  .industry-desc {
-    font-size: 1vw;
-  }
+    .material-item {
+        font-size: 1rem;
+    }
 
-  .application-card h2 {
-    font-size: 1.6vw;
-  }
+    .materials-note {
+        font-size: 0.85rem;
+    }
 
-  .application-card p {
-    font-size: 1vw;
-    line-height: 2vw;
-  }
+    /* ---------- INDUSTRIES ---------- */
+    .industries-intro {
+        font-size: 0.95rem;
+    }
 
-  .cta p {
-    font-size: 1vw;
-    line-height: 2vw;
-  }
+    .industry-name {
+        font-size: 1rem;
+    }
 
-  .cta-btn {
-    font-size: 1.1vw;
-    padding: 1vw 2.5vw;
-  }
+    .industry-desc {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    /* ---------- APPLICATIONS ---------- */
+    .applications-intro {
+        font-size: 0.95rem;
+    }
+
+    .application-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .application-card p {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
+
+    /* ---------- ADVANTAGES ---------- */
+    .AnB-intro {
+        font-size: 0.95rem;
+    }
+
+    .AnB-label {
+        font-size: 1rem;
+        padding: 0.7rem 1.4rem;
+    }
+
+    .tab-content {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta p {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 0.9rem 2.4rem;
+        border-radius: 2.4rem;
+    }
+
+    /* ---------- UNDERLINES ---------- */
+    .underline,
+    .fabrication_underline,
+    .materials_underline,
+    .industries-underline,
+    .fab_applications_underline,
+    .AnB-underline,
+    .cta-underline {
+        width: 2.5rem;
+        border-width: 0.15rem;
+    }
 }
