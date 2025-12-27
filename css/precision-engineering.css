@@ -91,7 +91,7 @@
 .capabilities {
     background-color: #ededed;
     margin: 0 -5vw 0 -5vw;
-    padding: 7%;
+    padding: 5% 8%;
 }
 
 .capabilities h1 {
@@ -129,7 +129,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 3%;
+    padding: 8% 3%;
 }
 
 .machines-text h1 {
@@ -137,7 +137,7 @@
 }
 
 .why_machines {
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
 }
 
 .machines-text ul {
@@ -146,7 +146,7 @@
 
 .machines-text li {
     padding: 2% 0 2% 0;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .machines-text b {
@@ -171,10 +171,180 @@
     margin-bottom: 0.5vw;
 }
 
+/* ========== MATERIALS SECTION ========== */
+.materials {
+    padding: 8%;
+    margin: 0 -5vw 5vw -5vw;
+    background-color: #ededed;
+}
+
+.materials h1 {
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 0.5vw;
+}
+
+.materials-underline {
+    width: 4vw;
+    margin: 0 auto 1vw;
+}
+
+.materials-intro {
+    max-width: 80vw;
+    margin: 0 auto 3vw;
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    color: darkslategray;
+}
+
+.materials-table {
+    margin: 0 auto;
+    border-top: 0.2vw solid #cdcdcd;
+}
+
+.material-row {
+    position: relative;
+    border-bottom: 0.2vw solid #cdcdcd;
+    padding: 2vw 1vw;
+}   
+
+.material-row input {
+    display: none;
+}
+
+.material-name {
+    display: block;
+    font-size: 1.6vw;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.material-name::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.6vw;
+    transition: 0.2s ease;
+}
+
+.material-desc {
+    max-height: 0vw;
+    opacity: 0;
+    font-size: 1.1vw;
+    color: darkslategray;
+    transition: 0.3s ease;
+}
+
+.material-row input:checked + .material-name::after {
+    content: "-";
+}
+
+.material-row input:checked ~ .material-desc {
+    max-height: 20vw;
+    opacity: 1;
+    margin-top: 1vw;
+}
+
+@media (max-width: 768px) {
+    .material-name {
+        font-size: 2.6vw;
+    }
+
+    .material-desc {
+        font-size: 2.2vw;
+        line-height: 3.4vw;
+    }
+
+    .material-name::after {
+        font-size: 3vw;
+    }
+}
+
+/* ========== INDUSTRIES ========== */
+
+.industries {
+    padding: 5%;
+}
+
+.industries h1 {
+    font-size: 3.2vw;
+    text-align: center;
+}
+
+.industries-underline {
+    width: 4vw;
+    margin: 0 auto 1vw;
+}
+
+.industries-intro {
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    margin-bottom: 3vw;
+}
+
+.industries-list {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.industry-item {
+    border: 0.2vw solid #cdcdcd;
+    border-radius: 1.2vw;
+    margin-bottom: 1.6vw;
+}
+
+.industry-item input {
+    display: none;
+}
+
+.industry-name {
+    display: block;
+    padding: 1.5vw 2vw;
+    border-radius: 1vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.industry-name:hover {
+    background-color: #f2f2f2;
+}
+
+.industry-desc {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2vw;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.industry-item input:checked ~ .industry-desc {
+    max-height: 15vw;
+    padding: 1vw 2vw;
+}
+
+@media (max-width: 768px) {
+    .industry-name {
+        font-size: 2.6vw;
+        padding: 2vw;
+    }
+
+    .industry-desc {
+        font-size: 2.2vw;
+        line-height: 3.4vw;
+        padding: 0 2vw;
+    }
+}
+
 /* =========== CNC APPLICATIONS =========== */
 .cnc-applications {
-    margin: 0 -5vw 7vw -5vw;
-    padding: 0 8%;
+    padding: 0 5%;
+    margin-bottom: 7vw;
 }
 
 .cnc-applications h1 {
@@ -183,7 +353,8 @@
 }
 
 .why_applications {
-    margin-left: 6vw;
+    width: 4vw;
+    margin: 0 auto 2vw;
 }
 
 .applications-intro {
@@ -196,11 +367,11 @@
 .applications-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4vw;
+    gap: 5vw;
 }
 
 .application-card {
-    padding: 3vw;
+    padding: 2.5vw;
     border-radius: 1vw;
     border-left: 0.5vw solid red;
     box-shadow: 0.3vw 0.3vw 1.2vw rgba(0, 0, 0, 0.45);
@@ -213,7 +384,7 @@
     position: absolute;
     top: 1vw;
     right: 1vw;
-    font-size: 0.9vw;
+    font-size: 1vw;
     color: rgb(165, 165, 165);
     letter-spacing: 0.2vw;
 }
@@ -269,236 +440,223 @@
     }
 }
 
-/* ========== INDUSTRIES ========== */
-.industries {
-    margin: 0 -5vw 7vw -5vw;
-    padding: 8%;
-    background-color: #ededed;
+/* ===========ADVANTAGES/ WHY US=========== */
+.AnB {
+    padding: 5%;
+    background-color: #f4f4f4;
+    margin: 0 -5vw 3vw -5vw;
+    text-align: center; 
 }
 
-.industries h1 {
+.AnB h1 {
     font-size: 3.2vw;
-    text-align: center;
+    margin-bottom: 0.5vw;
 }
 
-.industries_underline{
+.AnB-underline {
+    width: 4vw;
+    margin: 0 auto 1vw;
+}
+
+.AnB-intro {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    max-width: 80vw;
+    margin: 0 auto 2vw auto;
+}
+
+.AnB-tabs {
+    max-width: 80vw;
     margin: 0 auto;
 }
 
-.industries-intro {
-    max-width: 70vw;
-    margin: 0 auto 4vw auto;
-    text-align: center;
-    font-size: 1.2vw;
-    line-height: 2.6vw;
+.AnB-tabs input[type="radio"] {
+    display: none;
 }
 
-.industries-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5vw;
-}
-
-.industry-card {
-    background: white;
-    padding: 2.5vw;
-    font-size: 1.6vw;
+.AnB-label {
+    display: inline-block;
+    font-size: 1.4vw;
     font-weight: 600;
-    text-align: center;
-    border-left: 0.4vw solid red;
+    padding: 1vw 2vw;
+    margin-bottom: 1vw;
+    background-color: #e0e0e0;
     border-radius: 0.8vw;
-    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.industry-card:hover {
-    transform: translateY(-0.5vw);
+.AnB-label:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-0.2vw);
 }
 
-/* ========== MATERIALS ========== */
-.materials {
-    margin-bottom: 7vw;
-    padding: 0 8%;
-}
-
-.materials h1 {
-    text-align: center;
-}
-
-.materials-intro {
-    max-width: 70vw;
-    margin: 0 auto 4vw auto;
-    text-align: center;
-    font-size: 1.5vw;
-    line-height: 2.6vw;
-}
-
-.materials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3vw;
-}
-
-.material-card {
-    background: #f7f7f7;
-    padding: 2.8vw;
-    font-size: 1.6vw;
-    border-radius: 1vw;
-    box-shadow: inset 0 0 0 0.2vw #ccc;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.material-card span {
+#tab1:checked ~ .tab1-content,
+#tab2:checked ~ .tab2-content {
     display: block;
-    font-size: 1.3vw;
-    margin-top: 0.8vw;
-    color: #555;
+    animation: fadeSlide 0.4s ease;
 }
 
-.material-card:hover {
-    background: white;
-    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.4);
+#tab1:checked + .AnB-label,
+#tab2:checked + .AnB-label {
+    background-color: red;
+    color: white;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-
-    .industries-intro,
-    .materials-intro {
-        font-size: 3.5vw;
-        line-height: 6vw;
-    }
-
-    .industries-grid {
-        grid-template-columns: 1fr;
-        gap: 4vw;
-    }
-
-    .industry-card {
-        font-size: 4vw;
-        padding: 4vw;
-    }
-
-    .materials-grid {
-        grid-template-columns: 1fr;
-        gap: 4vw;
-    }
-
-    .material-card {
-        font-size: 4vw;
-        padding: 4vw;
-    }
-
-    .material-card span {
-        font-size: 3.2vw;
-    }
-}
-
-/* ===========Why Us=========== */
-.why-cnc-us {
-    margin-bottom: 7vw;
-}
-
-.why-cnc-us h2 {
-    font-size: 3vw;
-    padding-left: 5vw;
-}
-
-.why_underline {
-    margin-left: 5vw;
-    margin-bottom: 5vw;
-}
-
-.why-cnc-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.cnc-benefits,
-.why-us {
-    margin: auto;
-    background-color: #dcdcdc;
-    border-radius: 20px;
-    padding: 3vw;
-}
-
-.why-cnc-grid h2 {
-    font-size: 2vw;
-    border-left: 0.3vw solid red;
-    padding-left: 1vw;
-    margin-bottom: 2vw;
-}
-
-.why-cnc-grid li {
+.tab-content {
+    display: none;
+    background-color: white;
+    padding: 2vw;
+    margin-top: 1vw;
+    border-radius: 0.8vw;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.2);
     font-size: 1.2vw;
-    margin: 0 0 1.2vw 1vw;
-    padding: 0.5vw 0;
+    line-height: 2vw;
+    text-align: left;
 }
 
-/* ========= QUALITY ASSURANCE ========= */
+.tab-content ul {
+    list-style: none;
+}
+
+.tab-content li {
+    margin-bottom: 1.2vw;
+    padding-left: 2vw;
+}
+
+@media (max-width: 768px) {
+    .AnB-label {
+        display: block;
+        font-size: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .tab-content {
+        font-size: 2vw;
+        line-height: 3.5vw;
+    }
+
+    .AnB-intro {
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+}
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-1vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ===========QUALITY ASSURANCE=========== */
 .quality-assurance {
-    padding: 7vw 8vw;
+    padding: 5%;
 }
 
 .quality-assurance h1 {
+    font-size: 3.2vw;
     text-align: center;
+    margin-bottom: 1vw;
+}
+
+.qa_underline {
+    width: 4vw;
+    margin: 0 auto 2vw;
 }
 
 .qa-intro {
-    max-width: 70vw;
-    margin: 0 auto 4vw auto;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     line-height: 2.4vw;
+    margin-bottom: 4vw;
 }
 
-.qa-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.qa-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     gap: 3vw;
 }
 
-.qa-card {
-    background: white;
-    padding: 3vw;
-    border-top: 0.4vw solid red;
+.qa-line {
+    position: absolute;
+    left: 3vw;
+    top: 0;
+    bottom: 0;
+    width: 0.4vw;
+    background-color: red;
+    border-radius: 0.2vw;
+    z-index: 0;
+}
+
+.qa-step {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    background-color: white;
+    padding: 2vw;
     border-radius: 1vw;
-    box-shadow: 0.3vw 0.3vw 1.2vw rgba(0, 0, 0, 0.4);
-    transition: 0.3s ease;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
-.qa-card:hover {
-    transform: translateY(-0.6vw);
+.qa-step:hover {
+    transform: translateY(-0.5vw);
 }
 
-.qa-card h2 {
+.qa-icon {
+    font-size: 3.2vw;
+}
+
+.qa-text h2 {
     font-size: 1.8vw;
-    margin-bottom: 1.2vw;
+    color: red;
+    margin-bottom: 1vw;
 }
 
-.qa-card p {
-    font-size: 1.3vw;
-    line-height: 2.3vw;
+.qa-text p {
+    font-size: 1.2vw;
+    line-height: 2vw;
+    color: #333;
 }
 
 @media (max-width: 768px) {
+    .quality-assurance h1 {
+        font-size: 5vw;
+    }
+
     .qa-intro {
         font-size: 3.5vw;
         line-height: 6vw;
     }
 
-    .qa-grid {
-        grid-template-columns: 1fr;
-        gap: 5vw;
+    .qa-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .qa-card h2 {
-        font-size: 4.8vw;
+    .qa-icon {
+        margin-bottom: 2vw;
     }
 
-    .qa-card p {
-        font-size: 3.4vw;
-        line-height: 5.6vw;
+    .qa-text h2 {
+        font-size: 4vw;
+    }
+
+    .qa-text p {
+        font-size: 3vw;
+        line-height: 4.5vw;
+    }
+
+    .qa-line {
+        left: 50%;
     }
 }
 
@@ -528,40 +686,66 @@
     width: 100%;
 }
 
-/* ===== CTA ===== */
+/* ========= CTA ========= */
 .cta {
+    padding: 10%;
     background-color: black;
     color: white;
     text-align: center;
-    margin: 0 -5vw 0 -5vw;
-    padding: 15% 5% 15% 5%;
-}
-
-.cta a {
-    font-size: 1.2vw;
-    background-color: #18a0fb;
-    text-decoration: none;
-    border-radius: 1.6vw;
-    padding: 0.8vw 1vw;
-    color: black;
-}
-
-.cta a:hover {
-    background-color: #1585cf;
-    transition: 0.2s ease;
 }
 
 .cta h1 {
-    font-size: 2.8vw;
-    margin-bottom: 1vw;
+    font-size: 3.2vw;
+}
+
+.cta-underline {
+    width: 4vw;
+    margin: 0 auto 2vw;
 }
 
 .cta p {
-    font-size: 1.4vw;
-    margin-bottom: 2.4vw;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    max-width: 70vw;
+    margin: 0 auto 3vw auto;
 }
 
-/* ================= MOBILE ONLY ================= */
+.cta-btn {
+    display: inline-block;
+    padding: 1.2vw 3vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-radius: 3vw;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-0.3vw);
+    background-color: rgb(222, 0, 0);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .service-cta h2 {
+        font-size: 6vw;
+    }
+
+    .service-cta-text {
+        font-size: 3.5vw;
+        line-height: 6vw;
+        max-width: 90vw;
+    }
+
+    .service-cta-btn {
+        font-size: 3.8vw;
+        padding: 3vw 7vw;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
     /* ===== HERO ===== */

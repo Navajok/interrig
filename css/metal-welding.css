@@ -3,6 +3,11 @@
     font-size: 43px;
 }
 
+.underline {
+    width: 3vw;
+    border: 0.2vw solid red;
+}
+
 /* ===========HERO=========== */
 .slider {
     position: relative;
@@ -31,14 +36,14 @@
 
 .caption {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 5%;
     color: white;
     min-width: 55vw;
 }
 
 .caption h1 {
-    font-size: 4vw;
+    font-size: 3.6vw;
     padding-bottom: 1.6vw;
 }
 
@@ -65,20 +70,445 @@
     transition: 0.2s ease;
 }
 
-/* ===========Description=========== */
-.description {
+/* ========= METAL FABRICATION SOLUTIONS ========= */
+.fabrication-solutions {
+    padding: 5% 8%;
+}
+
+.fabrication-solutions h1 {
+    font-size: 3.2vw;
+}
+
+.fabrication_underline {
+    width: 4vw;
+    margin-bottom: 2.5vw;
+}
+
+.fabrication-intro {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    margin-bottom: 2vw;
+    max-width: 70%;
+}
+
+.fabrication-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    margin-bottom: 3vw;
+}
+
+.fabrication-list ul {
+    list-style: none;
+}
+
+.fabrication-list li {
+    font-size: 1.4vw;
+    padding: 1.2vw 0;
+    border-bottom: 0.15vw solid #e0e0e0;
+}
+
+.fabrication-note {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    max-width: 75%;
+    border-left: 0.4vw solid red;
+    padding-left: 1.5vw;
+}
+
+@media (max-width: 768px) {
+    .fabrication-solutions h2 {
+        font-size: 5vw;
+    }
+
+    .fabrication-intro,
+    .fabrication-note {
+        font-size: 3.5vw;
+        line-height: 6vw;
+        max-width: 100%;
+    }
+
+    .fabrication-list {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .fabrication-list li {
+        font-size: 3.6vw;
+    }
+}
+
+/* ========= MATERIALS SECTION ========= */
+.materials-section {
+    padding: 5% 8%;
+}
+
+.materials-section h1 {
+    font-size: 3.2vw;
     text-align: center;
-    align-items: center;
-    font-size: 1.6vw;
+}
+
+.materials_underline {
+    width: 4vw;
+    margin: 0 auto 2vw;
+}
+
+.materials-intro {
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.6vw;
+    margin-bottom: 2vw;
+}
+
+.materials-wrapper {
+    position: relative;
+    padding-left: 4vw;
+}
+
+.materials-line {
+    position: absolute;
+    left: 1vw;
+    width: 0.4vw;
+    height: 100%;
+    background-color: red;
+}
+
+.material-item {
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 1.4vw 0 1.4vw 2vw;
+    margin-bottom: 1vw;
+    border-bottom: 0.2vw solid #e0e0e0;
+}
+
+.materials-note {
+    font-size: 1vw;
+    line-height: 2.4vw;
+}
+
+@media (max-width: 768px) {
+    .materials-section h1 {
+        font-size: 5vw;
+    }
+
+    .materials-intro,
+    .materials-note {
+        font-size: 3.2vw;
+        line-height: 6vw;
+        max-width: 100%;
+    }
+
+    .material-item {
+        font-size: 3.8vw;
+        padding-left: 4vw;
+    }
+
+    .materials-line {
+        left: 0;
+    }
+}
+
+/* ===========INDUSTRIES=========== */
+
+.industries {
+    padding: 5%;
+    background-color: #f4f4f4;
+    margin: 0 -5vw 5vw -5vw;
+}
+
+.industries h1 {
+    font-size: 3.2vw;
+    text-align: center;
+}
+
+.industries-underline {
+    width: 4vw;
+    margin: 0 auto 1vw;
+}
+
+.industries-intro {
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    margin-bottom: 3vw;
+}
+
+.industries-list {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.industry-item {
+    border: 0.2vw solid #cdcdcd;
+    background-color: white;
+    border-radius: 1.2vw;
+    margin-bottom: 1.6vw;
+}
+
+.industry-item input {
+    display: none;
+}
+
+.industry-name {
+    display: block;
+    padding: 1.5vw 2vw;
+    border-radius: 1vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.industry-name:hover {
+    background-color: #f2f2f2;
+}
+
+.industry-desc {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2vw;
+    font-size: 1.2vw;
     line-height: 2vw;
-    margin-bottom: 3.8vw;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.industry-item input:checked~.industry-desc {
+    max-height: 15vw;
+    padding: 1vw 2vw;
+}
+
+@media (max-width: 768px) {
+    .industry-name {
+        font-size: 2.6vw;
+        padding: 2vw;
+    }
+
+    .industry-desc {
+        font-size: 2.2vw;
+        line-height: 3.4vw;
+        padding: 0 2vw;
+    }
+}
+
+/* ===========APPLICATIONS=========== */
+.cnc-applications {
+    padding: 0 5%;
+    margin-bottom: 7vw;
+}
+
+.cnc-applications h1 {
+    font-size: 3.2vw;
+    text-align: center;
+}
+
+.fab_applications_underline {
+    width: 4vw;
+    margin: 0 auto 2vw;
+    background-color: red;
+    height: 0.3vw;
+}
+
+.applications-intro {
+    margin: 1vw 0 5vw 0;
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 2.6vw;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+}
+
+.application-card {
+    padding: 2.5vw;
+    border-radius: 1vw;
+    border-left: 0.5vw solid red;
+    box-shadow: 0.3vw 0.3vw 1.2vw rgba(0, 0, 0, 0.45);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.application-card::before {
+    content: "CNC";
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    font-size: 1vw;
+    color: rgb(165, 165, 165);
+    letter-spacing: 0.2vw;
+}
+
+.application-card:hover {
+    transform: translateY(-0.6vw);
+    box-shadow: 0.6vw 0.6vw 1.6vw rgba(0, 0, 0, 0.55);
+}
+
+.application-card h2 {
+    font-size: 1.8vw;
+    margin-bottom: 1.4vw;
+}
+
+.application-card p {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cnc-applications h1 {
+        font-size: 7vw;
+    }
+
+    .applications-intro {
+        font-size: 3.5vw;
+        line-height: 6vw;
+    }
+
+    .applications-grid {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .application-card {
+        padding: 5vw;
+    }
+
+    .application-card h2 {
+        font-size: 5vw;
+    }
+
+    .application-card p {
+        font-size: 3.4vw;
+        line-height: 5.6vw;
+    }
+
+    .application-card::before {
+        font-size: 2.5vw;
+        top: 2vw;
+        right: 2vw;
+    }
+}
+
+/* ===========ADVANTAGES/ WHY US=========== */
+
+.AnB {
+    padding: 5%;
+    background-color: #f4f4f4;
+    margin: 0 -5vw 5vw -5vw;
+    text-align: center; 
+}
+
+.AnB h1 {
+    font-size: 3.2vw;
+    margin-bottom: 0.5vw;
+}
+
+.AnB-underline {
+    width: 4vw;
+    margin: 0 auto 1vw;
+}
+
+.AnB-intro {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    max-width: 80vw;
+    margin: 0 auto 2vw auto;
+}
+
+.AnB-tabs {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.AnB-tabs input[type="radio"] {
+    display: none;
+}
+
+.AnB-label {
+    display: inline-block;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 1vw 2vw;
+    margin: 0 0.2vw 1vw 0;
+    background-color: #e0e0e0;
+    border-radius: 0.8vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.AnB-label:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-0.3vw);
+}
+
+#tab1:checked ~ .tab1-content,
+#tab2:checked ~ .tab2-content {
+    display: block;
+    animation: fadeSlide 0.4s ease;
+}
+
+#tab1:checked + .AnB-label,
+#tab2:checked + .AnB-label {
+    background-color: red;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    background-color: white;
+    padding: 2vw;
+    margin-top: 1vw;
+    border-radius: 0.8vw;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.2);
+    font-size: 1.2vw;
+    line-height: 2vw;
+    text-align: left;
+}
+
+.tab-content ul {
+    list-style: none;
+}
+
+.tab-content li {
+    margin-bottom: 1.2vw;
+    padding-left: 2vw;
+}
+
+@media (max-width: 768px) {
+    .AnB-label {
+        display: block;
+        font-size: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .tab-content {
+        font-size: 2vw;
+        line-height: 3.5vw;
+    }
+
+    .AnB-intro {
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+}
+
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-1vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ===========Latest Metal Works=========== */
 .metalWorks {
     text-align: center;
-    background-color: #D9D9D9;
-    margin: 0 -3vw 7.5vw -3vw;
+    margin: 0 -5vw 3vw -5vw;
     padding: 0 5% 0 5%;
 }
 
@@ -98,31 +528,46 @@
 }
 
 .metalWorks-img img {
-  width: 100%;
+    width: 100%;
 }
 
-/* ===========Metal Working Example=========== */
-.metalWorksExamples {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 95px;
-    padding: 0 5% 0 5%;
-    border: 2px solid red;
-}
-
-.metalWorksExamples-box {
+/* ========= CTA ========= */
+.cta {
+    padding: 10%;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-.metalWorksExamples-box h1 {
-    font-size: 48px;
-    margin-bottom: 55px;
-    letter-spacing: -0.015em;
+.cta h1 {
+    font-size: 3.2vw;
 }
 
-.metalWorksExamples-box p {
-    margin-bottom: 65px;
-    font-size: 16px;
-    line-height: 152.63%;
-    letter-spacing: -0.015em;
+.cta-underline {
+    width: 4vw;
+    margin: 0 auto 2vw;
+}
+
+.cta p {
+    font-size: 1.2vw;
+    line-height: 2.4vw;
+    max-width: 70vw;
+    margin: 0 auto 3vw auto;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 1.2vw 3vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-radius: 3vw;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-0.3vw);
+    background-color: rgb(222, 0, 0);
 }

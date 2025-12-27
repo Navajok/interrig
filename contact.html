@@ -38,6 +38,16 @@
       </ul>
     </nav>
 
+    <section class="slider">
+      <div class="slide">
+        <img src="images/contactusbanner.png" alt="">
+        <div class="overlay"></div>
+        <div class="caption">
+          <h1>Contact Us</h1>
+        </div>
+      </div>
+    </section>
+
     <section class="quote-section">
 
       <div class="contact-info-boxes">
@@ -75,7 +85,7 @@
         <form action="https://formspree.io/f/xzznargk" method="POST" enctype="multipart/form-data">
           <div class="inputs">
             <input type="text" placeholder="Name" name="Name" required>
-            <input type="text" placeholder="Phone" name="Phone" required>
+            <input type="number" placeholder="Phone" name="Phone" required>
             <input type="email" placeholder="Email" name="Email" required>
           </div>
 
@@ -124,9 +134,11 @@
 
         <div class="footer-col contact-form">
           <h3>Contact</h3>
-          <label for="email">Enter your email address</label>
-          <input type="email" id="email" name="email">
-          <input type="submit" value="Submit">
+          <form action="https://formspree.io/f/xzznargk" method="POST">
+            <label for="email">Enter your email address</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
     </footer>
