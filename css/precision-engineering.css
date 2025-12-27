@@ -232,11 +232,11 @@
     transition: 0.3s ease;
 }
 
-.material-row input:checked + .material-name::after {
+.material-row input:checked+.material-name::after {
     content: "-";
 }
 
-.material-row input:checked ~ .material-desc {
+.material-row input:checked~.material-desc {
     max-height: 20vw;
     opacity: 1;
     margin-top: 1vw;
@@ -302,7 +302,7 @@
     transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-.industry-item input:checked ~ .industry-desc {
+.industry-item input:checked~.industry-desc {
     max-height: 15vw;
     padding: 1vw 2vw;
 }
@@ -421,14 +421,14 @@
     transform: translateY(-0.2vw);
 }
 
-#tab1:checked ~ .tab1-content,
-#tab2:checked ~ .tab2-content {
+#tab1:checked~.tab1-content,
+#tab2:checked~.tab2-content {
     display: block;
     animation: fadeSlide 0.4s ease;
 }
 
-#tab1:checked + .AnB-label,
-#tab2:checked + .AnB-label {
+#tab1:checked+.AnB-label,
+#tab2:checked+.AnB-label {
     background-color: red;
     color: white;
 }
@@ -459,6 +459,7 @@
         opacity: 0;
         transform: translateY(-1vw);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -609,6 +610,11 @@
 /* ==================== MOBILE ADJUSTMENTS ==================== */
 @media screen and (max-width: 768px) {
 
+    .underline {
+        width: 6vw;
+        border: 0.4vw solid red;
+    }
+
     /* ===== HERO ===== */
     .slider {
         height: 80vh;
@@ -654,7 +660,6 @@
     /* ===== CAPABILITIES ===== */
     .capabilities h1 {
         font-size: 7vw;
-        margin-bottom: 7vw;
     }
 
     .card-grid {
@@ -675,11 +680,15 @@
 
     .machines-text h1 {
         font-size: 6vw;
-        padding-bottom: 3vw;
     }
 
     .machines-text li {
         font-size: 3.8vw;
+    }
+
+
+    .machines-text p {
+        font-size: 2.4vw;
     }
 
     .machines-img {
@@ -691,38 +700,57 @@
     }
 
     /* ===== MATERIALS ===== */
-    .material-name {
-        font-size: 2.6vw;
+    .materials h1 {
+        font-size: 6vw;
+    }
+
+    .materials-intro {
+        font-size: 2.8vw;
+        line-height: 4.8vw;
+    }
+
+    .material-name,
+    .material-name::after {
+        font-size: 3.2vw;
     }
 
     .material-desc {
-        font-size: 2.2vw;
+        font-size: 2.4vw;
         line-height: 3.4vw;
     }
 
-    .material-name::after {
-        font-size: 3vw;
+    
+    /* ---------- INDUSTRIES ---------- */
+    .industries h1 {
+        font-size: 7vw;
     }
 
-    /* ===== INDUSTRIES ===== */
+    .industries-intro {
+        font-size: 3.6vw;
+        line-height: 6vw;
+    }
+
+    .industry-item{
+        border-radius: 2vw;
+    }
+
     .industry-name {
-        font-size: 2.6vw;
-        padding: 2vw;
+        font-size: 4vw;
+        padding: 3vw;
     }
 
     .industry-desc {
-        font-size: 2.2vw;
-        line-height: 3.4vw;
-        padding: 0 2vw;
+        font-size: 3.4vw;
+        line-height: 5.4vw;
     }
 
     /* ===== CNC APPLICATIONS ===== */
     .cnc-applications h1 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .applications-intro {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -750,23 +778,33 @@
         right: 2vw;
     }
 
-    /* ===== ADVANTAGES / WHY US ===== */
-    .AnB-label {
-        display: block;
-        font-size: 3vw;
-        margin-bottom: 1vw;
-    }
-
-    .tab-content {
-        font-size: 2vw;
-        line-height: 3.5vw;
+    /* ---------- ADVANTAGES /WHY US ---------- */
+    .AnB h1 {
+        font-size: 7vw;
     }
 
     .AnB-intro {
-        font-size: 2.5vw;
-        line-height: 4vw;
+        font-size: 3.6vw;
+        line-height: 6vw;
     }
 
+    .AnB-label {
+        display: block;
+        width: 100%;
+        font-size: 4vw;
+        padding: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .tab-content {
+        font-size: 3.4vw;
+        line-height: 5.6vw;
+        padding: 5vw;
+    }
+
+    .tab-content li {
+        margin-bottom: 3vw;
+    }
     /* ===== QUALITY ASSURANCE ===== */
     .quality-assurance h1 {
         font-size: 5vw;
@@ -810,18 +848,21 @@
         font-size: 6.5vw;
     }
 
-    /* ===== CTA ===== */
+
+    /* ---------- CTA ---------- */
     .cta h1 {
-        font-size: 7vw;
+        font-size: 7;
     }
 
     .cta p {
-        font-size: 4vw;
+        font-size: 3.6vw;
+        line-height: 6vw;
+        max-width: 90vw;
     }
 
-    .cta a {
+    .cta-btn {
         font-size: 4vw;
-        padding: 3vw 6vw;
-        border-radius: 5vw;
+        padding: 3vw 8vw;
+        border-radius: 8vw;
     }
 }
