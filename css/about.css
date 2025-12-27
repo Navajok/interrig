@@ -70,18 +70,19 @@
 
 
 .btn-learn {
-  font: inherit;
-  background-color: transparent;
+  color: black;
   border: 3px solid black;
   padding: 1vw 1.6vw;
   cursor: pointer;
-  transition: 0.3s;
   border-radius: 1.6vw;
+  text-decoration: none;
   font-size: 1.2vw;
   font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .btn-learn:hover {
+  background-color: black;
   color: white;
 }
 
@@ -181,22 +182,6 @@
   width: 100%;
 }
 
-/* @media screen and (min-width:1920px) {
-    .metalWelding-text h1 {
-        font-size: 60px;
-    }
-
-    .metalWelding-text p {
-        font-size: 20px;
-    }
-
-    .metalWelding-header h1 {
-        font-size: 60px;
-    }
-
-} */
-
-
 /* ===========TRUSTED BY=========== */
 .trustedBy {
   text-align: center;
@@ -263,7 +248,7 @@
   width: 2vw;
 }
 
-/* ================= MOBILE ONLY ================= */
+/* ================= MOBILE ================= */
 @media screen and (max-width: 768px) {
 
   /* ===== HERO ===== */
