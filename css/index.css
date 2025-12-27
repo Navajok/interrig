@@ -223,6 +223,10 @@
   margin-left: 28.5vw;
 }
 
+
+/* ====== DESKTOP ====== */
+
+
 @media screen and (max-width: 768px) {
   .slider {
     height: 60vh;
@@ -350,5 +354,84 @@
   .projects-underline {
     margin: 4vw auto;
     width: 10vw;
+  }
+}
+
+/* ==================== DESKTOP ==================== */
+@media screen and (min-width: 1920px) {
+
+  .headline h1 {
+    font-size: 2vw; 
+    line-height: 2.5vw;
+  }
+
+  .headline p {
+    font-size: 1vw;
+    line-height: 1.8vw;
+  }
+
+  /* Services */
+  .services h1 {
+    font-size: 2vw;
+  }
+
+  .grid-box p {
+    font-size: 1vw;
+  }
+
+  .grid-box img {
+    width: 90%;
+  }
+
+  .metalWelding-text h1 {
+    font-size: 2vw;
+  }
+
+  .metalWelding-text p {
+    font-size: 1vw;
+    line-height: 1.8vw;
+  }
+
+  .trustedBy h1 {
+    font-size: 1.8vw;
+  }
+
+  .underline {
+    width: 2.5vw;
+    margin: 0 auto 1.5vw;
+  }
+
+  .featured h1 {
+    font-size: 2vw;
+  }
+
+  .featured-grid {
+    gap: 2vw;
+  }
+
+  .featuredProject img {
+    width: 95%;
+  }
+
+  .caption h1 {
+    font-size: 2.4vw;
+  }
+
+  .caption p {
+    font-size: 1vw;
+  }
+
+  .btn {
+    font-size: 1vw;
+    padding: 0.8vw 1.2vw;
+  }
+
+  .headline,
+  .services,
+  .metalWelding,
+  .trustedBy,
+  .featured {
+    margin-bottom: 5vw; 
+    padding: 0 3vw;
   }
 }
