@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  margin: 0 5vw;
+  margin: 0 10vw;
 }
 
 /* ===========Nav Bar=========== */
@@ -363,4 +363,5 @@ footer {
     padding: 0.7vw 1.5vw;
     border-radius: 0.3vw;
   }
+
 }
