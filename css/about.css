@@ -387,3 +387,93 @@
     border-width: 0.5vw;
   }
 }
+
+/* ================= DESKTOP ================= */
+@media screen and (min-width: 1920px) {
+
+  /* Section headers */
+  .section-head {
+    font-size: 2.4vw;
+    margin-bottom: 2vw;
+  }
+
+  /* ===== HERO ===== */
+  .slider {
+    height: 26vw;
+    margin-bottom: 5vw;
+  }
+
+  .caption h1 {
+    font-size: 3.6vw;
+  }
+
+  /* ===== OVERVIEW ===== */
+  .overview-text h2 {
+    font-size: 2.8vw;
+  }
+
+  .overview-text p {
+    font-size: 1vw;
+  }
+
+  .btn-learn {
+    font-size: 1vw;
+    padding: 0.8vw 1.4vw;
+    border-radius: 1.2vw;
+  }
+
+  /* ===== QUALITIES ===== */
+  .qualities {
+    gap: 7vw;
+  }
+
+  .quality-box-text h3 {
+    font-size: 1.2vw;
+  }
+
+  .quality-box-text p {
+    font-size: 0.8vw;
+    line-height: 1.3vw;
+  }
+
+  /* ===== METAL WELDING ===== */
+  .metalWelding-header {
+    font-size: 1.8vw;
+  }
+
+  .metalWelding-text h1 {
+    font-size: 2.8vw;
+  }
+
+  .metalWelding-text p {
+    font-size: 0.9vw;
+    line-height: 1.4vw;
+  }
+
+  /* ===== TRUSTED BY ===== */
+  .trustedBy {
+    margin-bottom: 6vw;
+  }
+
+  .trustedlogos {
+    padding: 0.8vw 0;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-info h2 {
+    font-size: 2.4vw;
+  }
+
+  .contact-info p {
+    font-size: 0.9vw;
+  }
+
+  .contact-info img {
+    width: 1.6vw;
+  }
+
+  .underline {
+    width: 2.2vw;
+    border-width: 0.15vw;
+  }
+}
