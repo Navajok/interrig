@@ -304,7 +304,7 @@ footer {
   }
 
   .nav-bar img {
-    width: 12vw;
+    width: 12vw; 
   }
 
   .nav-links {
@@ -363,5 +363,4 @@ footer {
     padding: 0.7vw 1.5vw;
     border-radius: 0.3vw;
   }
-
 }
