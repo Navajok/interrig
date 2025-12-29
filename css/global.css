@@ -6,7 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .main {
@@ -14,8 +14,11 @@ body {
 }
 
 /* ===========Nav Bar=========== */
-.nav-bar {
+header{
   background-color: black;
+}
+
+.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -299,68 +302,87 @@ footer {
 /* ==================== DESKTOP ==================== */
 @media screen and (min-width: 1920px) {
 
+  html {
+    font-size: 16px;
+  }
+
+  .main{
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* ---------- NAV BAR ---------- */
   .nav-bar {
-    padding: 1.5vw 5vw;
+    padding: 1.5rem 0;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .nav-bar img {
-    width: 12vw; 
+    width: 20rem;
   }
 
   .nav-links {
-    font-size: 1vw;
-    gap: 2vw;
+    font-size: 1.2rem;
+    gap: 2rem;
   }
 
   .nav-links a {
-    padding: 0.3vw 0.5vw;
+    padding: 0.4rem 0.6rem;
+  }
+
+  #services {
+    min-width: 14rem;
   }
 
   #services li a {
-    font-size: 0.9vw;
-    padding: 0.5vw 0;
+    font-size: 0.95rem;
+    padding: 0.6rem 0;
   }
 
   .nav-links .nav-contact {
-    padding: 0.3vw 1.5vw;
-    font-size: 0.9vw;
+    font-size: 1.2rem;
+    padding: 0.4rem 1.6rem;
   }
 
-  /* Footer */
+  /* ---------- FOOTER ---------- */
   footer {
-    padding: 2vw 5vw;
+    padding: 3rem 5rem;
   }
 
   .footer-content {
-    gap: 2vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    gap: 3rem;
   }
 
   .logo-black {
-    width: 12%;
+    width: 20%;
   }
 
   .footer-col h3 {
-    font-size: 0.9vw;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .footer-col p {
-    font-size: 0.8vw;
-    line-height: 1.5vw;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
   }
 
   .contact-form label,
   .contact-form input[type="email"],
   .contact-form input[type="submit"] {
-    font-size: 0.8vw;
+    font-size: 0.9rem;
   }
 
   .contact-form input[type="email"] {
-    padding: 0.8vw 1vw;
-    border-radius: 0.3vw;
+    padding: 0.75rem 1rem;
+    border-radius: 0.3rem;
   }
 
   .contact-form input[type="submit"] {
-    padding: 0.7vw 1.5vw;
-    border-radius: 0.3vw;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.3rem;
   }
 }

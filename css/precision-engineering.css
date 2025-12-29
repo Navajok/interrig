@@ -45,6 +45,7 @@
 
 .actions {
     margin: 3.2vw 0;
+    transition: 0.3s ease;
 }
 
 .actions a {
@@ -55,12 +56,17 @@
     color: black;
     background-color: #18a0fb;
     box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease;
 }
 
 .actions a:hover {
     background-color: #1585cf;
-    transition: 0.2s ease;
 }
+
+.actions:hover {
+    transform: translateY(-0.2vw);
+}
+
 
 /* =========== DESCRIPTION =========== */
 .description {
@@ -85,8 +91,14 @@
 /* ===== CAPABILITIES ===== */
 .capabilities {
     background-color: #ededed;
-    margin: 0 -10vw 0 -10vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
     padding: 5% 8%;
+}
+
+.capabilities-inner {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .capabilities h1 {
@@ -124,7 +136,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8% 3%;
+    padding: 8% 0;
 }
 
 .machines-text h1 {
@@ -169,14 +181,20 @@
 /* ========== MATERIALS ========== */
 .materials {
     padding: 8%;
-    margin: 0 -10vw 5vw -10vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 5vw;
     background-color: #ededed;
+}
+
+.materials-inner{
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .materials h1 {
     font-size: 3vw;
     text-align: center;
-    margin-bottom: 0.5vw;
 }
 
 .materials-underline {
@@ -374,8 +392,15 @@
 .AnB {
     padding: 5%;
     background-color: #f4f4f4;
-    margin: 0 -10vw 3vw -10vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 5vw;
     text-align: center;
+}
+
+.AnB-inner {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .AnB h1 {
@@ -396,7 +421,7 @@
 }
 
 .AnB-tabs {
-    max-width: 80vw;
+    max-width: 70vw;
     margin: 0 auto;
 }
 
@@ -409,7 +434,7 @@
     font-size: 1.4vw;
     font-weight: 600;
     padding: 1vw 2vw;
-    margin-bottom: 1vw;
+    margin: 0 0.2vw 1vw 0;
     background-color: #e0e0e0;
     border-radius: 0.8vw;
     cursor: pointer;
@@ -418,7 +443,7 @@
 
 .AnB-label:hover {
     background-color: #d0d0d0;
-    transform: translateY(-0.2vw);
+    transform: translateY(-0.3vw);
 }
 
 #tab1:checked~.tab1-content,
@@ -468,7 +493,7 @@
 
 /* ========== QUALITY ASSURANCE ========== */
 .quality-assurance {
-    padding: 5%;
+    padding: 5% 0;
 }
 
 .quality-assurance h1 {
@@ -543,110 +568,110 @@
 /* ================= FEATURED PROJECTS ================= */
 
 .featured-projects {
-  margin-bottom: 6vw;
-  text-align: center;
+    margin-bottom: 6vw;
+    text-align: center;
 }
 
-/* ----- Header ----- */
 .featured-projects-header h1 {
-  font-size: 3.2vw;
-  margin-bottom: 3vw;
+    font-size: 3.2vw;
 }
 
-/* ----- Slider Wrapper ----- */
+.fp_underline{
+    margin: 0 auto 3vw;
+}
+
 .projects-slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
-/* ----- Each Slide ----- */
 .projects-slide {
-  display: none;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2vw;
-  animation: fadeSlide 0.5s ease;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    animation: fadeSlide 0.5s ease;
 }
 
 .projects-slide.active {
-  display: grid;
+    display: grid;
 }
 
-/* ----- Images ----- */
 .projects-slide img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 1vw;
-  object-fit: cover;
-  box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1vw;
+    object-fit: cover;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-slide img:hover {
-  transform: translateY(-0.4vw);
-  box-shadow: 0.6vw 0.6vw 1.4vw rgba(0, 0, 0, 0.45);
+    transform: translateY(-0.4vw);
+    box-shadow: 0.6vw 0.6vw 1.4vw rgba(0, 0, 0, 0.45);
 }
 
 /* ----- Controls ----- */
 
 .projects-slider-controls {
-  display: flex;
-  justify-content: center;
-  gap: 2vw;
-  margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 3vw;
 }
 
 .projects-slider-controls button {
-  font-size: 2.2vw;
-  width: 4vw;
-  height: 4vw;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+    font-size: 2.2vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .projects-slider-controls button:hover {
-  background-color: red;
-  transform: translateY(-0.2vw);
+    background-color: red;
+    transform: translateY(-0.2vw);
 }
 
 @keyframes fadeSlide {
-  from {
-    opacity: 0;
-    transform: translateY(1vw);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(1vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ================= MOBILE ================= */
 @media screen and (max-width: 768px) {
 
-  .featured-projects-header h1 {
-    font-size: 6vw;
-    margin-bottom: 6vw;
-  }
+    .featured-projects-header h1 {
+        font-size: 6vw;
+        margin-bottom: 6vw;
+    }
 
-  .projects-slide {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4vw;
-  }
+    .projects-slide {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+    }
 
-  .projects-slide img {
-    border-radius: 2vw;
-  }
+    .projects-slide img {
+        border-radius: 2vw;
+    }
 
-  .projects-slider-controls button {
-    font-size: 5vw;
-    width: 9vw;
-    height: 9vw;
-  }
+    .projects-slider-controls button {
+        font-size: 5vw;
+        width: 9vw;
+        height: 9vw;
+    }
 }
 
 /* ========== CTA ========== */
@@ -802,7 +827,7 @@
         line-height: 3.4vw;
     }
 
-    
+
     /* ---------- INDUSTRIES ---------- */
     .industries h1 {
         font-size: 7vw;
@@ -813,7 +838,7 @@
         line-height: 6vw;
     }
 
-    .industry-item{
+    .industry-item {
         border-radius: 2vw;
     }
 
@@ -827,38 +852,39 @@
         line-height: 5.4vw;
     }
 
-    /* ===== CNC APPLICATIONS ===== */
+
+    /* ---------- CNC APPLICATIONS ---------- */
     .cnc-applications h1 {
         font-size: 6vw;
     }
 
     .applications-intro {
-        font-size: 3.2vw;
+        font-size: 3.6vw;
         line-height: 6vw;
     }
 
     .applications-grid {
         grid-template-columns: 1fr;
-        gap: 4vw;
+        gap: 6vw;
     }
 
     .application-card {
-        padding: 5vw;
+        padding: 6vw;
     }
 
     .application-card h2 {
-        font-size: 5vw;
+        font-size: 4.8vw;
     }
 
     .application-card p {
-        font-size: 3.4vw;
-        line-height: 5.6vw;
+        font-size: 3.6vw;
+        line-height: 6vw;
     }
 
     .application-card::before {
-        font-size: 2.5vw;
-        top: 2vw;
-        right: 2vw;
+        font-size: 3vw;
+        top: 3vw;
+        right: 3vw;
     }
 
     /* ---------- ADVANTAGES /WHY US ---------- */
@@ -888,6 +914,7 @@
     .tab-content li {
         margin-bottom: 3vw;
     }
+
     /* ===== QUALITY ASSURANCE ===== */
     .quality-assurance h1 {
         font-size: 5vw;
@@ -947,5 +974,272 @@
         font-size: 4vw;
         padding: 3vw 8vw;
         border-radius: 8vw;
+    }
+}
+
+/* ================= DESKTOP ================= */
+@media screen and (min-width: 1920px) {
+
+    .underline {
+        width: 2vw;
+        border: 0.1vw solid red;
+    }
+
+    /* ---------- HERO ---------- */
+    .slider {
+        /* max-width: 1600px;
+        margin: 0 auto;
+        max-height: 700px; */
+        height: 45rem;
+    }
+
+    .caption {
+        left: 30rem;
+    }
+
+    .caption h1 {
+        font-size: 3rem;
+        line-height: 2.8rem;
+    }
+
+    .caption h2 {
+        font-size: 2rem;
+    }
+
+    .caption p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .actions a {
+        font-size: 1.4rem;
+        padding: 1rem 1.6rem;
+        border-radius: 1.6rem;
+    }
+
+    /* ===== DESCRIPTION ===== */
+    .description h1 {
+        font-size: 3rem;
+    }
+
+    .description p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    /* ===== CAPABILITIES ===== */
+    .capabilities h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        font-size: 1.4rem;
+        padding: 1.6rem 2rem;
+    }
+
+    /* ===== MACHINES ===== */
+    .machines-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .machines-text li {
+        font-size: 1.2rem;
+    }
+
+    .machines-text p {
+        font-size: 1rem;
+    }
+
+    .machines-img p {
+        font-size: 1rem;
+    }
+
+    /* ===== MATERIALS ===== */
+    .materials h1 {
+        font-size: 3rem;
+    }
+
+    .materials-intro {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .material-row {
+        padding: 2rem 1.6rem;
+    }
+
+    .material-name,
+    .material-name::after {
+        font-size: 1.6rem;
+    }
+
+    .material-desc {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    /* ===== INDUSTRIES ===== */
+    .industries h1 {
+        font-size: 2.8rem;
+    }
+
+    .industries-intro {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .industry-name {
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .industry-desc {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    /* ---------- CNC APPLICATIONS ---------- */
+    .cnc-applications {
+        padding: 4rem 0;
+        margin-bottom: 5rem;
+    }
+
+    .cnc-applications h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .applications-intro {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .applications-grid {
+        gap: 3rem;
+    }
+
+    .application-card {
+        padding: 2rem;
+        border-left-width: 0.2rem;
+    }
+
+    .application-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .application-card p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .application-card::before {
+        top: 0.6vw;
+        right: 0.6vw;
+        font-size: 1rem;
+    }
+
+
+    /* ---------- ADVANTAGES / WHY US ---------- */
+    .AnB h1 {
+        font-size: 2.4rem;
+    }
+
+    .AnB-intro {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .AnB-label {
+        font-size: 1.2rem;
+        padding: 1rem 1.6rem;
+    }
+
+    .tab-content {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding: 1.2rem;
+    }
+
+    /* ===== QUALITY ASSURANCE ===== */
+    .quality-assurance h1 {
+        font-size: 3rem;
+    }
+
+    .qa-intro {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .qa-step {
+        padding: 2rem;
+    }
+
+    .qa-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .qa-text p {
+        font-size: 1.2rem;
+        line-height: 2.8rem;
+    }
+
+    .qa-icon {
+        font-size: 4rem;
+    }
+
+    /* ---------- FEATURED PROJECTS ---------- */
+
+    .featured-projects {
+        margin-bottom: 4rem;
+    }
+
+    .featured-projects-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .projects-slide.active {
+        gap: 2.5rem;
+    }
+
+    .projects-slide img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .projects-slider-controls {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .projects-slider-controls button {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    /* ---------- CTA ---------- */
+    .cta {
+        padding: 10rem;
+    }
+
+    .cta h1 {
+        font-size: 3rem;
+    }
+
+    .cta p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        max-width: 60rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        border-radius: 1.6rem;
     }
 }

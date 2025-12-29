@@ -3,6 +3,11 @@
   font-size: 3vw;
 }
 
+.underline {
+  width: 4vw;
+  border: 0.2vw solid red;
+}
+
 /* ===========Hero=========== */
 
 .slider {
@@ -25,7 +30,6 @@
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .overlay {
@@ -140,11 +144,11 @@
   border: 0.3vw solid black;
   margin-bottom: 1.2vw;
   width: 100%;
-  transition: 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
-.grid-box img:hover{
-  opacity: 110%;
+.grid-box img:hover {
+  transform: translateY(-0.5vw);
 }
 
 .grid-box p {
@@ -168,6 +172,7 @@
 }
 
 .metalWelding-text p {
+  min-width: max-content;
   font-size: 1vw;
   line-height: 152.63%;
 }
@@ -190,42 +195,103 @@
   margin-bottom: 5vw;
 }
 
+.trustedBy h1 {
+  margin-bottom: 0;
+}
+
+.trustedBy-underline {
+  margin: 0 auto 4vw;
+}
+
 .trustedlogos img {
   width: 100%;
   border: 0.2vw solid black;
   border-radius: 1.6vw;
 }
 
-.underline {
-  margin: -3vw 0 3vw 36vw;
-  width: 4vw;
-  border: 0.2vw solid red;
-}
+/* ================= FEATURED PROJECTS ================= */
 
-/* ===========FEATURED=========== */
-.featured {
+.featured-projects {
+  margin-bottom: 6vw;
   text-align: center;
-  margin-bottom: 8vw;
 }
 
-.featured-grid {
-  display: grid;
+.featured-projects h1 {
+  margin-bottom: 0;
+}
+
+.featured-projects-underline {
+  margin: 0 auto 3vw;
+}
+
+.projects-slider {
+  position: relative;
+    width: 100%;
+}
+
+.projects-slide {
+  display: none;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4.5vw;
+  gap: 2vw;
+  animation: fadeSlide 0.5s ease;
 }
 
-.featuredProject img {
-  border: 0.2vw solid black;
-  width: 100%;
+.projects-slide.active {
+  display: grid;
 }
 
-.projects-underline {
-  margin-left: 28.5vw;
+.projects-slide img {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1vw;
+  object-fit: cover;
+  box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.projects-slide img:hover {
+  transform: translateY(-0.4vw);
+  box-shadow: 0.6vw 0.6vw 1.4vw rgba(0, 0, 0, 0.45);
+}
 
-/* ====== DESKTOP ====== */
+.projects-slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 3vw;
+}
 
+.projects-slider-controls button {
+  font-size: 2.2vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.projects-slider-controls button:hover {
+  background-color: red;
+  transform: translateY(-0.2vw);
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(1vw);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== MOBILE ====== */
 
 @media screen and (max-width: 768px) {
   .slider {
@@ -336,102 +402,182 @@
     font-size: 6vw;
   }
 
-  .underline {
-    margin: 4vw auto;
-    width: 10vw;
-  }
-
   /* ====== FEATURED PROJECTS ====== */
-  .featured-grid {
-    grid-template-columns: 1fr;
-    gap: 6vw;
-  }
 
-  .featured h1 {
+  .featured-projects-header h1 {
     font-size: 6vw;
+    margin-bottom: 6vw;
   }
 
-  .projects-underline {
-    margin: 4vw auto;
-    width: 10vw;
+  .projects-slide {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
+  }
+
+  .projects-slide img {
+    border-radius: 2vw;
+  }
+
+  .projects-slider-controls button {
+    font-size: 5vw;
+    width: 9vw;
+    height: 9vw;
   }
 }
 
 /* ==================== DESKTOP ==================== */
 @media screen and (min-width: 1920px) {
 
-  .headline h1 {
-    font-size: 2vw; 
-    line-height: 2.5vw;
-  }
-
-  .headline p {
-    font-size: 1vw;
-    line-height: 1.8vw;
-  }
-
-  /* Services */
-  .services h1 {
-    font-size: 2vw;
-  }
-
-  .grid-box p {
-    font-size: 1vw;
-  }
-
-  .grid-box img {
-    width: 90%;
-  }
-
-  .metalWelding-text h1 {
-    font-size: 2vw;
-  }
-
-  .metalWelding-text p {
-    font-size: 1vw;
-    line-height: 1.8vw;
-  }
-
-  .trustedBy h1 {
-    font-size: 1.8vw;
+  .main {
+    margin: 0 auto;
   }
 
   .underline {
-    width: 2.5vw;
-    margin: 0 auto 1.5vw;
+    width: 2vw;
+    border-width: 0.1vw;
   }
 
-  .featured h1 {
-    font-size: 2vw;
+  /* ---------- SECTION HEADINGS ---------- */
+  .section-head {
+    font-size: 2.8rem;
   }
 
-  .featured-grid {
-    gap: 2vw;
+  /* ---------- HERO / SLIDER ---------- */
+  .slider {
+    /* max-width: 1600px;
+    margin: 0 auto;
+    max-height: 700px; */
+    height: 85vh;
   }
 
-  .featuredProject img {
-    width: 95%;
+  .caption {
+    top: 40%;
+    left: 8%;
+    max-width: 42rem;
   }
 
   .caption h1 {
-    font-size: 2.4vw;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
   }
 
   .caption p {
-    font-size: 1vw;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 
   .btn {
-    font-size: 1vw;
-    padding: 0.8vw 1.2vw;
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    border-width: 2px;
+    border-radius: 1rem;
   }
 
-  .headline,
-  .services,
-  .metalWelding,
-  .trustedBy,
-  .featured {
-    margin-bottom: 5vw; 
-    padding: 0 3vw;
+  .prev,
+  .next {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  .prev {
+    left: 3rem;
+  }
+
+  .next {
+    right: 3rem;
+  }
+
+  /* ---------- COMPANIES ---------- */
+
+  .companies {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .companies img {
+    margin-bottom: 6rem;
+  }
+
+  /* ---------- HEADLINE ---------- */
+  .headline {
+    margin-bottom: 6rem;
+  }
+
+  .headline h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .headline p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services {
+    margin-bottom: 8rem;
+  }
+
+  .services-grid {
+    column-gap: 6rem;
+  }
+
+  .grid-box p {
+    font-size: 1.4rem;
+  }
+
+  /* ---------- METAL WELDING ---------- */
+  .metalWelding {
+    gap: 6rem;
+    margin-bottom: 8rem;
+  }
+
+  .metalWelding-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .metalWelding-text p {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+
+  /* ---------- TRUSTED BY ---------- */
+  .trustedBy {
+    margin-bottom: 7rem;
+  }
+
+  /* ---------- FEATURED PROJECTS ---------- */
+
+  .featured-projects {
+    margin-bottom: 4rem;
+  }
+
+  .featured-projects-header h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .projects-slide {
+    gap: 2.5rem;
+  }
+
+  .projects-slide img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 1rem;
+  }
+
+  .projects-slider-controls {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .projects-slider-controls button {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
   }
 }
