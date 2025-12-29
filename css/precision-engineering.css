@@ -539,7 +539,7 @@
     background-color: white;
     padding: 2vw;
     border-radius: 1vw;
-    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
     transition: transform 0.3s ease;
@@ -1019,27 +1019,27 @@
 
     /* ===== DESCRIPTION ===== */
     .description h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .description p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         line-height: 2rem;
     }
 
     /* ===== CAPABILITIES ===== */
     .capabilities h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .card {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 1.6rem 2rem;
     }
 
     /* ===== MACHINES ===== */
     .machines-text h1 {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .machines-text li {
@@ -1056,21 +1056,21 @@
 
     /* ===== MATERIALS ===== */
     .materials h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .materials-intro {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 2rem;
     }
 
     .material-row {
-        padding: 2rem 1.6rem;
+        padding: 1.6rem 1.2rem;
     }
 
     .material-name,
     .material-name::after {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .material-desc {
@@ -1105,15 +1105,13 @@
     }
 
     .cnc-applications h1 {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 2.4rem;
     }
 
     .applications-intro {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
-        margin-bottom: 2.5rem;
-        text-align: center;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin-bottom: 2rem;
     }
 
     .applications-grid {
@@ -1122,25 +1120,23 @@
 
     .application-card {
         padding: 2rem;
-        border-left-width: 0.2rem;
+        border-left-width: 0.4rem;
     }
 
     .application-card h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .application-card p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 2rem;
     }
 
     .application-card::before {
         top: 0.6vw;
         right: 0.6vw;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
-
-
     /* ---------- ADVANTAGES / WHY US ---------- */
     .AnB h1 {
         font-size: 2.4rem;
@@ -1165,30 +1161,29 @@
 
     /* ===== QUALITY ASSURANCE ===== */
     .quality-assurance h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .qa-intro {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         margin-bottom: 4rem;
     }
 
     .qa-step {
-        padding: 2rem;
+        padding: 1.6rem;
     }
 
     .qa-text h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .qa-text p {
-        font-size: 1.2rem;
-        line-height: 2.8rem;
+        font-size: 1rem;
     }
 
     .qa-icon {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     /* ---------- FEATURED PROJECTS ---------- */

@@ -49,8 +49,10 @@
 .ourSupplies {
     text-align: center;
     background-color: #D9D9D9;
-    margin: 0 -2.5vw 7.6vw -2.5vw;
-    padding: 0 2.7vw 0.1vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 7vw;
+    padding: 2% 20%;
 }
 
 .ourSupplies-header h1 {
@@ -65,6 +67,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3.3vw 4.7vw;
     margin-bottom: 4.4vw;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.ourSupplies-img{
+    transition: 0.3s ease;
+}
+
+.ourSupplies-img:hover{
+    transform: translateY(-0.7vw);
 }
 
 .ourSupplies-img img {
