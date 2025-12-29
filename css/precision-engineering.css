@@ -260,71 +260,6 @@
     margin-top: 1vw;
 }
 
-/* ========== INDUSTRIES ========== */
-.industries {
-    padding: 5%;
-}
-
-.industries h1 {
-    font-size: 3.2vw;
-    text-align: center;
-}
-
-.industries-underline {
-    width: 4vw;
-    margin: 0 auto 1vw;
-}
-
-.industries-intro {
-    text-align: center;
-    font-size: 1.2vw;
-    line-height: 2.4vw;
-    margin-bottom: 3vw;
-}
-
-.industries-list {
-    max-width: 80vw;
-    margin: 0 auto;
-}
-
-.industry-item {
-    border: 0.2vw solid #cdcdcd;
-    border-radius: 1.2vw;
-    margin-bottom: 1.6vw;
-}
-
-.industry-item input {
-    display: none;
-}
-
-.industry-name {
-    display: block;
-    padding: 1.5vw 2vw;
-    border-radius: 1vw;
-    font-size: 1.4vw;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.industry-name:hover {
-    background-color: #f2f2f2;
-}
-
-.industry-desc {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 2vw;
-    font-size: 1.2vw;
-    line-height: 2vw;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-.industry-item input:checked~.industry-desc {
-    max-height: 15vw;
-    padding: 1vw 2vw;
-}
-
 /* ========== CNC APPLICATIONS ========== */
 .cnc-applications {
     padding: 0 5%;
@@ -826,33 +761,7 @@
         font-size: 2.4vw;
         line-height: 3.4vw;
     }
-
-
-    /* ---------- INDUSTRIES ---------- */
-    .industries h1 {
-        font-size: 7vw;
-    }
-
-    .industries-intro {
-        font-size: 3.6vw;
-        line-height: 6vw;
-    }
-
-    .industry-item {
-        border-radius: 2vw;
-    }
-
-    .industry-name {
-        font-size: 4vw;
-        padding: 3vw;
-    }
-
-    .industry-desc {
-        font-size: 3.4vw;
-        line-height: 5.4vw;
-    }
-
-
+    
     /* ---------- CNC APPLICATIONS ---------- */
     .cnc-applications h1 {
         font-size: 6vw;
@@ -1077,27 +986,7 @@
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
-
-    /* ===== INDUSTRIES ===== */
-    .industries h1 {
-        font-size: 2.8rem;
-    }
-
-    .industries-intro {
-        font-size: 1.4rem;
-        line-height: 2rem;
-    }
-
-    .industry-name {
-        font-size: 1.4rem;
-        padding: 1rem 1.5rem;
-    }
-
-    .industry-desc {
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-    }
-
+    
     /* ---------- CNC APPLICATIONS ---------- */
     .cnc-applications {
         padding: 4rem 0;
