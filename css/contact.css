@@ -93,8 +93,31 @@
 .inputs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "name mobile email"
+        "name_err mobile_err .";
     gap: 1.2vw;
     margin-bottom: 1.5vw;
+}
+
+#name {
+    grid-area: name;
+}
+
+#name_err {
+    grid-area: name_err;
+}
+
+#mobile {
+    grid-area: mobile;
+}
+
+#mobile_err {
+    grid-area: mobile_err;
+}
+
+#email {
+    grid-area: email;
 }
 
 .quote-form input,
@@ -201,6 +224,12 @@ input[type="file"] {
 
     .inputs {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "name"
+            "name_err" 
+            "mobile"
+            "mobile_err"
+            "email";
         gap: 4vw;
         margin-bottom: 4vw;
     }

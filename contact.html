@@ -86,9 +86,11 @@
       <form action="https://formspree.io/f/xzznargk" method="POST" enctype="multipart/form-data">
         <div class="inputs">
           <input type="hidden" name="Quote Form" value="Quote Form Submission">
-          <input type="text" placeholder="Name" name="Name" required>
-          <input type="number" placeholder="Phone" name="Phone" required>
-          <input type="email" placeholder="Email" name="Email" required>
+          <input type="text" placeholder="Name" name="Name" id="name" required>
+          <span id="name_err" class="err_label"></span>
+          <input type="number" placeholder="Phone" name="Phone" id="mobile" required>
+          <span id="mobile_err" class="err_label"></span> 
+          <input type="email" placeholder="Email" name="Email" required id="email">
         </div>
 
         <label for="Drawings">Drawings</label>
@@ -145,6 +147,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/validate.js"></script>
 </body>
 
 </html>
