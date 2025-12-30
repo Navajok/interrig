@@ -837,9 +837,12 @@
 
     .featured-projects-header h1 {
         font-size: 6vw;
-        margin-bottom: 6vw;
     }
 
+    .fp_underline{
+        margin-bottom: 6vw;
+    }
+    
     .projects-slide {
         grid-template-columns: repeat(2, 1fr);
         gap: 4vw;
@@ -1113,4 +1116,5 @@
         padding: 1rem 2rem;
         border-radius: 1.6rem;
     }
+
 }
