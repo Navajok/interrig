@@ -552,33 +552,31 @@
 
   /* ---------- FEATURED PROJECTS ---------- */
 
-  .featured-projects {
-    margin-bottom: 4rem;
-  }
+    .featured-projects {
+        margin-bottom: 4rem;
+    }
 
-  .featured-projects-header h1 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-  }
+    .featured-projects-header h1 {
+        font-size: 3rem;
+    }
 
-  .projects-slide {
-    gap: 2.5rem;
-  }
+    .projects-slide.active {
+        gap: 2.5rem;
+    }
 
-  .projects-slide img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 1rem;
-  }
+    .projects-slide img {
+        width: 100%;
+        border-radius: 1rem;
+    }
 
-  .projects-slider-controls {
-    gap: 2rem;
-    margin-top: 3rem;
-  }
+    .projects-slider-controls {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
 
-  .projects-slider-controls button {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 1.5rem;
-  }
+    .projects-slider-controls button {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
 }
