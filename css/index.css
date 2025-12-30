@@ -291,6 +291,11 @@
 /* ====== MOBILE ====== */
 
 @media screen and (max-width: 768px) {
+  
+  .underline {
+      width: 6vw;
+      border: 0.4vw solid red;
+  }
   .slider {
     height: 40vh;
   }
