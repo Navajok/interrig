@@ -205,97 +205,98 @@
 /* ================= FEATURED PROJECTS ================= */
 
 .featured-projects {
-    margin-bottom: 6vw;
-    text-align: center;
+  margin-bottom: 6vw;
+  text-align: center;
 }
 
 .featured-projects-header h1 {
-    font-size: 3.2vw;
+  font-size: 3.2vw;
 }
 
-.fp_underline{
-    margin: 0 auto 3vw;
+.fp_underline {
+  margin: 0 auto 3vw;
 }
 
 .projects-slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .projects-slide {
-    display: none;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2vw;
-    animation: fadeSlide 0.5s ease;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  animation: fadeSlide 0.5s ease;
 }
 
 .projects-slide.active {
-    display: grid;
+  display: grid;
 }
 
 .projects-slide img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 1vw;
-    object-fit: cover;
-    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1vw;
+  object-fit: cover;
+  box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-slide img:hover {
-    transform: translateY(-0.4vw);
-    box-shadow: 0.6vw 0.6vw 1.4vw rgba(0, 0, 0, 0.45);
+  transform: translateY(-0.4vw);
+  box-shadow: 0.6vw 0.6vw 1.4vw rgba(0, 0, 0, 0.45);
 }
 
 /* ----- Controls ----- */
 
 .projects-slider-controls {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
-    margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 3vw;
 }
 
 .projects-slider-controls button {
-    font-size: 2.2vw;
-    width: 4vw;
-    height: 4vw;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+  font-size: 2.2vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .projects-slider-controls button:hover {
-    background-color: red;
-    transform: translateY(-0.2vw);
+  background-color: red;
+  transform: translateY(-0.2vw);
 }
 
 @keyframes fadeSlide {
-    from {
-        opacity: 0;
-        transform: translateY(1vw);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(1vw);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
 /* ====== MOBILE ====== */
 
 @media screen and (max-width: 768px) {
-  
+
   .underline {
-      width: 6vw;
-      border: 0.4vw solid red;
+    width: 6vw;
+    border: 0.4vw solid red;
   }
+
   .slider {
     height: 40vh;
   }
@@ -376,6 +377,7 @@
     text-align: center;
     margin: 0 auto 18vw;
   }
+
   .metalWelding-text h1 {
     font-size: 4vw;
     text-decoration-thickness: 0.3vw;
@@ -388,7 +390,7 @@
     line-height: 5vw;
   }
 
-  .metalWelding-img img{
+  .metalWelding-img img {
     width: 100%;
   }
 
@@ -404,27 +406,28 @@
   /* ====== FEATURED PROJECTS ====== */
 
   .featured-projects-header h1 {
-      font-size: 6vw;
+    font-size: 6vw;
   }
 
-  .fp_underline{
-      margin-bottom: 6vw;
+  .fp_underline {
+    margin-bottom: 6vw;
   }
-    
+
   .projects-slide {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 4vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw;
   }
 
   .projects-slide img {
-      border-radius: 2vw;
+    border-radius: 2vw;
   }
 
   .projects-slider-controls button {
-      font-size: 5vw;
-      width: 9vw;
-      height: 9vw;
+    font-size: 5vw;
+    width: 9vw;
+    height: 9vw;
   }
+}
 
 /* ==================== DESKTOP ==================== */
 @media screen and (min-width: 1920px) {
