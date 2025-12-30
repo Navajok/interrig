@@ -641,6 +641,9 @@
 
     .featured-projects-header h1 {
         font-size: 6vw;
+    }
+
+    .fp_underline{
         margin-bottom: 6vw;
     }
 
@@ -893,4 +896,5 @@
         padding: 1rem 2rem;
         border-radius: 1.6rem;
     }
+
 }
