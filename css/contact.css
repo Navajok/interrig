@@ -170,7 +170,7 @@ input[type="file"] {
 @media (max-width: 768px) {
 
     .caption h1 {
-        font-size: 7cqi;
+        font-size: 7vw;
     }
 
     .quote-section {
@@ -256,4 +256,5 @@ input[type="file"] {
         padding: 4vw;
         border-radius: 2vw;
     }
+
 }
