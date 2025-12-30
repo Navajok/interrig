@@ -187,7 +187,7 @@
     background-color: #ededed;
 }
 
-.materials-inner{
+.materials-inner {
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -511,7 +511,7 @@
     font-size: 3.2vw;
 }
 
-.fp_underline{
+.fp_underline {
     margin: 0 auto 3vw;
 }
 
@@ -629,6 +629,17 @@
 /* ==================== MOBILE ADJUSTMENTS ==================== */
 @media screen and (max-width: 768px) {
 
+    .capabilities,
+    .machines,
+    .materials,
+    .cnc-applications,
+    .AnB,
+    .quality-assurance,
+    .featured-projects {
+        margin-bottom: 7vw;
+    }
+
+
     .underline {
         width: 6vw;
         border: 0.4vw solid red;
@@ -636,7 +647,8 @@
 
     /* ===== HERO ===== */
     .slider {
-        height: 80vh;
+        min-height: 80vh;
+        margin-bottom: 5vw;
     }
 
     .caption {
@@ -672,7 +684,7 @@
     }
 
     .description p {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -737,7 +749,7 @@
         font-size: 2.4vw;
         line-height: 3.4vw;
     }
-    
+
     /* ---------- CNC APPLICATIONS ---------- */
     .cnc-applications h1 {
         font-size: 6vw;
@@ -839,10 +851,10 @@
         font-size: 6vw;
     }
 
-    .fp_underline{
+    .fp_underline {
         margin-bottom: 6vw;
     }
-    
+
     .projects-slide {
         grid-template-columns: repeat(2, 1fr);
         gap: 4vw;
@@ -976,7 +988,7 @@
         font-size: 1.2rem;
         line-height: 1.8rem;
     }
-    
+
     /* ---------- CNC APPLICATIONS ---------- */
     .cnc-applications {
         padding: 4rem 0;
@@ -1016,6 +1028,7 @@
         right: 0.6vw;
         font-size: 0.9rem;
     }
+
     /* ---------- ADVANTAGES / WHY US ---------- */
     .AnB h1 {
         font-size: 2.4rem;

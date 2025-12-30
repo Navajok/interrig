@@ -167,7 +167,7 @@
 /* ===========APPLICATIONS=========== */
 .cnc-applications {
     padding: 0 5%;
-    margin-bottom: 7vw;
+    margin-bottom: 5vw;
 }
 
 .cnc-applications h1 {
@@ -340,7 +340,7 @@
     font-size: 3.2vw;
 }
 
-.fp_underline{
+.fp_underline {
     margin: 0 auto 3vw;
 }
 
@@ -460,6 +460,14 @@
 /* ===================== MOBILE RESPONSIVE ===================== */
 @media screen and (max-width: 768px) {
 
+    .fabrication-solutions,
+    .materials-section,
+    .cnc-applications,
+    .AnB,
+    .featured-projects {
+        margin-bottom: 7vw;
+    }
+
     .underline {
         width: 6vw;
         border: 0.4vw solid red;
@@ -467,8 +475,7 @@
 
     /* ---------- HERO ---------- */
     .slider {
-        height: auto;
-        min-height: 90vh;
+        min-height: 80vh;
     }
 
     .caption {
@@ -504,6 +511,10 @@
     .fabrication-solutions h1 {
         font-size: 7vw;
         text-align: center;
+    }
+
+    .fabrication_underline {
+        margin: 0 auto 5vw;
     }
 
     .fabrication-intro {
@@ -565,6 +576,10 @@
     }
 
     /* ---------- CNC APPLICATIONS ---------- */
+    .cnc-applications {
+        padding: 5%;
+    }
+
     .cnc-applications h1 {
         font-size: 6vw;
     }
@@ -643,7 +658,7 @@
         font-size: 6vw;
     }
 
-    .fp_underline{
+    .fp_underline {
         margin-bottom: 6vw;
     }
 
