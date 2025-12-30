@@ -156,15 +156,16 @@
 }
 
 /* ===========Metal Welding Homepage=========== */
+
 .metalWelding {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin-bottom: 7.5vw;
 }
 
 .metalWelding-text h1 {
-  font-size: 3.3vw;
+  font-size: 3.2vw;
   text-decoration: underline;
   text-decoration-thickness: 0.1vw;
   text-underline-offset: 0.2vw;
@@ -177,16 +178,8 @@
   line-height: 152.63%;
 }
 
-.metalWelding-img {
-  width: 85%;
-}
-
-.metalWelding-text {
-  margin-left: -3vw;
-}
-
 .metalWelding-img img {
-  width: 100%;
+  width: 90%;
 }
 
 /* ===========TRUSTED BY=========== */
@@ -226,7 +219,7 @@
 
 .projects-slider {
   position: relative;
-    width: 100%;
+  width: 100%;
 }
 
 .projects-slide {
@@ -295,7 +288,7 @@
 
 @media screen and (max-width: 768px) {
   .slider {
-    height: 60vh;
+    height: 40vh;
   }
 
   .caption {
@@ -336,7 +329,8 @@
 
   /* ====== HEADLINE ====== */
   .headline {
-    margin-bottom: 12vw;
+    margin: 0 auto 12vw;
+    min-width: 80vw;
   }
 
   .headline h1 {
@@ -345,8 +339,8 @@
   }
 
   .headline p {
-    font-size: 3vw;
-    line-height: 5.5vw;
+    font-size: 2.8vw;
+    line-height: 5vw;
   }
 
   /* ====== SERVICES ====== */
@@ -371,26 +365,22 @@
     grid-template-columns: 1fr;
     gap: 6vw;
     text-align: center;
-    margin-bottom: 23vw;
+    margin: 0 auto 18vw;
   }
-
-  .metalWelding-img {
-    width: 100%;
-  }
-
-  .metalWelding-text {
-    margin-left: 0;
-  }
-
   .metalWelding-text h1 {
-    font-size: 6vw;
+    font-size: 4vw;
     text-decoration-thickness: 0.3vw;
     text-underline-offset: 0.4vw;
   }
 
   .metalWelding-text p {
-    font-size: 3.6vw;
-    line-height: 5.5vw;
+    min-width: unset;
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+
+  .metalWelding-img img{
+    width: 100%;
   }
 
   /* ====== TRUSTED BY ====== */

@@ -12,6 +12,7 @@
 .slider {
   position: relative;
   height: 30vw;
+  width: 100%;
   overflow: hidden;
   margin-bottom: 6.7vw;
 }
@@ -147,7 +148,7 @@
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   margin-bottom: 5vw;
-  padding: 5%;
+  padding: 7% 10vw;
 }
 
 .metalWelding-inner {
@@ -157,23 +158,22 @@
 
 .metalWelding-header {
   text-align: center;
-  padding: 5% 0 5% 0;
   font-size: 2vw;
+  margin: 0 auto 3%;
 }
 
 .metalWelding-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  padding-bottom: 5%;
 }
 
 .metalWelding-text h1 {
-  font-size: 3.3vw;
+  font-size: 3.2vw;
   text-decoration: underline;
-  text-underline-offset: 0.2vw;
   text-decoration-thickness: 0.1vw;
-  margin-bottom: 14px;
+  text-underline-offset: 0.2vw;
+  margin-bottom: 1vw;
 }
 
 .metalWelding-text p {
@@ -182,17 +182,8 @@
   line-height: 152.63%;
 }
 
-.metalWelding-img {
-  width: 85%;
-  padding-right: -200px;
-}
-
-.metalWelding-text {
-  margin-left: -3vw;
-}
-
 .metalWelding-img img {
-  width: 100%;
+  width: 90%;
 }
 
 /* ===========TRUSTED BY=========== */
@@ -280,7 +271,7 @@
   /* ===== OVERVIEW ===== */
   .overview-section {
     flex-direction: column;
-    gap: 8vw;
+    gap: 8vh;
     margin-bottom: 20vw;
   }
 
@@ -303,6 +294,7 @@
   .qualities {
     grid-template-columns: 1fr;
     gap: 8vw;
+    margin-bottom: 12vw;
   }
 
   .quality-box {
@@ -317,7 +309,8 @@
   }
 
   .quality-box-text {
-    margin-left: 0;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .quality-box-text h3 {
@@ -325,44 +318,40 @@
   }
 
   .quality-box-text p {
-    font-size: 3.8vw;
+    font-size: 3.2vw;
     line-height: 5.5vw;
     width: 100%;
-    margin-right: 0;
   }
 
   /* ===== METAL WELDING ===== */
   .metalWelding {
-    margin: 0;
+    margin-bottom: 18vw;
   }
 
   .metalWelding-content {
     grid-template-columns: 1fr;
-    gap: 8vw;
+    gap: 6vw;
     text-align: center;
   }
 
   .metalWelding-header {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
-  .metalWelding-text {
-    width: 100%;
-    margin-left: 0;
+  .metalWelding-text p {
+    min-width: unset;
+    font-size: 3vw;
+    line-height: 5vw;
   }
 
   .metalWelding-text h1 {
     font-size: 6vw;
+    text-decoration-thickness: 0.3vw;
+    text-underline-offset: 0.4vw;
   }
 
-  .metalWelding-text p {
-    font-size: 3.8vw;
-    line-height: 6vw;
-  }
-
-  .metalWelding-img {
+  .metalWelding-img img {
     width: 100%;
-    padding-right: 0;
   }
 
   /* ===== TRUSTED BY ===== */
@@ -378,7 +367,6 @@
   /* ===== CONTACT ===== */
   .contact-section {
     flex-direction: column;
-    height: auto;
   }
 
   .contact-map {
