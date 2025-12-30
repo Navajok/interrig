@@ -273,19 +273,23 @@
     flex-direction: column;
     gap: 8vh;
     margin-bottom: 20vw;
+    text-align: center;
   }
 
-  .overview-text h2 {
-    font-size: 6vw;
+  .overview-text h1 {
+    font-size: 7vw;
+    margin-bottom: 5vw;
   }
 
   .overview-text p {
-    font-size: 3.2vw;
-    line-height: 4vw;
+    min-width: max-content;
+    font-size: 3vw;
+    line-height: 5vw;
+    margin-bottom: 5vw;
   }
 
   .btn-learn {
-    font-size: 3.2vw;
+    font-size: 2.8vw;
     padding: 2vw 4vw;
     border-radius: 4vw;
   }
