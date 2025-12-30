@@ -1,35 +1,39 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelector('.prev').onclick = function () {
-  plusSlides(-1);
-};
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-document.querySelector('.next').onclick = function () {
-  plusSlides(+1);
-};
+  document.querySelector('.prev').onclick = function () {
+    plusSlides(-1);
+  };
 
-function plusSlides(x) {
-  showSlides(slideIndex += x);
-}
+  document.querySelector('.next').onclick = function () {
+    plusSlides(1);
+  };
 
-function currentSlide(x) {
-  showSlides(slideIndex = x);
-}
-
-function showSlides(x) {
-  var slides = document.getElementsByClassName("slide");
-
-  if (x > slides.length) {
-    slideIndex = 1; 
-  }
-  if (x < 1) {
-    slideIndex = slides.length;
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].classList.remove('active');
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
 
-  slides[slideIndex - 1].classList.add('active');
-}
+  function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+
+    slides[slideIndex - 1].classList.add("active");
+  }
+
+});

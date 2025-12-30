@@ -25,8 +25,6 @@ function validateForm() {
         formOK = false;
         document.getElementById("name_err").innerHTML = "Name must only be alphabetical values";
     }
-    
-    return formOK; 
 }
 
 function validateMobile(str) {
@@ -46,5 +44,4 @@ function clearErrorMsgs() {
         labels[i].innerHTML = "";
     }
 }
-
 
