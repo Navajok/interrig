@@ -56,20 +56,25 @@
   margin-bottom: 5vw;
   width: 100%;
   box-sizing: border-box;
+  gap: 5vw;
 }
 
 .overview-text {
   flex: 1;
 }
 
-.overview-text h2 {
-  font-size: 3.5vw;
+.overview-text h1 {
+  font-size: 3.2vw;
   color: black;
-  margin-bottom: 15px;
+}
+
+.overview_underline {
+  width: 3vw;
+  margin-bottom: 1vw;
 }
 
 .overview-text p {
-  font-size: 1.2vw;
+  font-size: 1vw;
   margin-bottom: 2vw;
   line-height: 1.8vw;
 }
@@ -257,6 +262,11 @@
 /* ================= MOBILE ================= */
 @media screen and (max-width: 768px) {
 
+  .underline {
+    width: 6vw;
+    border: 0.2vw solid red;
+  }
+
   /* ===== HERO ===== */
   .slider {
     height: 50vw;
@@ -278,8 +288,12 @@
 
   .overview-text h1 {
     font-size: 7vw;
-    margin-bottom: 5vw;
   }
+
+  .overview_underline {
+    margin: 0 auto 5vw;
+  }
+
 
   .overview-text br {
     display: none;
@@ -346,7 +360,7 @@
     font-size: 4vw;
   }
 
-  .metalWelding-text br{
+  .metalWelding-text br {
     display: none;
   }
 
@@ -398,11 +412,6 @@
   .contact-info img {
     width: 5vw;
   }
-
-  .underline {
-    width: 10vw;
-    border-width: 0.5vw;
-  }
 }
 
 /* ================= DESKTOP ================= */
@@ -439,7 +448,7 @@
     gap: 6rem;
   }
 
-  .overview-text h2 {
+  .overview-text h1 {
     font-size: 2.25rem;
   }
 
