@@ -66,7 +66,7 @@
   border-radius: 0.6vw;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .prev,
@@ -111,6 +111,10 @@
 .headline p {
   font-size: 1.4vw;
   line-height: 2vw;
+}
+
+.headline b {
+  font-weight: 600;
 }
 
 /* ===========Service=========== */
@@ -169,6 +173,10 @@
   min-width: max-content;
   font-size: 1vw;
   line-height: 152.63%;
+}
+
+.metalWelding-text b {
+  font-weight: 600;
 }
 
 .metalWelding-img img {
@@ -348,10 +356,6 @@
     line-height: 5vw;
   }
 
-  .headline b {
-    font-weight: 600;
-  }
-
   /* ====== SERVICES ====== */
   .services-grid {
     grid-template-columns: 1fr;
@@ -383,7 +387,7 @@
     text-underline-offset: 0.4vw;
   }
 
-  .metalWelding-text br{
+  .metalWelding-text br {
     display: none;
   }
 
@@ -392,10 +396,6 @@
     text-align: justify;
     font-size: 3vw;
     line-height: 5vw;
-  }
-
-  .metalWelding-text b {
-    font-weight: 600;
   }
 
   .metalWelding-img img {
@@ -568,7 +568,7 @@
     font-size: 3rem;
   }
 
-  .fp_underline{
+  .fp_underline {
     margin-bottom: 3rem;
   }
 

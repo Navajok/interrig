@@ -262,9 +262,13 @@
 /* ================= MOBILE ================= */
 @media screen and (max-width: 768px) {
 
+  b{
+    font-weight: 600;
+  }
+
   .underline {
     width: 6vw;
-    border: 0.4vw solid red;
+    border: 0.2vw solid red;
   }
 
   /* ===== HERO ===== */
@@ -540,5 +544,4 @@
   .contact-info img {
     width: 1.5rem;
   }
-
 }
