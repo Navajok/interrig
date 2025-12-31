@@ -475,7 +475,7 @@
 
     /* ---------- HERO ---------- */
     .slider {
-        min-height: 80vh;
+        min-height: 70vh;
     }
 
     .caption {
@@ -509,7 +509,8 @@
 
     /* ---------- FABRICATION SOLUTIONS ---------- */
     .fabrication-solutions h1 {
-        font-size: 7vw;
+        margin: 0 -10vw;
+        font-size: 6vw;
         text-align: center;
     }
 
@@ -518,9 +519,9 @@
     }
 
     .fabrication-intro {
-        font-size: 3.6vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
-        text-align: center;
         max-width: 100%;
     }
 
@@ -546,13 +547,14 @@
 
     /* ---------- MATERIALS ---------- */
     .materials-section h1 {
-        font-size: 7vw;
+        margin: 0 -10vw;
+        font-size: 6vw;
     }
 
     .materials-intro {
-        font-size: 3.6vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
-        text-align: center;
     }
 
     .materials-wrapper {
@@ -576,16 +578,14 @@
     }
 
     /* ---------- CNC APPLICATIONS ---------- */
-    .cnc-applications {
-        padding: 5%;
-    }
 
     .cnc-applications h1 {
         font-size: 6vw;
     }
 
     .applications-intro {
-        font-size: 3.6vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -599,7 +599,7 @@
     }
 
     .application-card h2 {
-        font-size: 4.8vw;
+        font-size: 4vw;
     }
 
     .application-card p {
@@ -615,11 +615,12 @@
 
     /* ---------- ADVANTAGES /WHY US ---------- */
     .AnB h1 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .AnB-intro {
-        font-size: 3.6vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -683,6 +684,7 @@
     }
 
     .cta p {
+        text-align: justify;
         font-size: 3.6vw;
         line-height: 6vw;
         max-width: 90vw;

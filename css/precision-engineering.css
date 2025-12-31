@@ -639,7 +639,6 @@
         margin-bottom: 7vw;
     }
 
-
     .underline {
         width: 6vw;
         border: 0.4vw solid red;
@@ -647,7 +646,7 @@
 
     /* ===== HERO ===== */
     .slider {
-        min-height: 80vh;
+        min-height: 70vh;
         margin-bottom: 5vw;
     }
 
@@ -683,7 +682,13 @@
         font-size: 6vw;
     }
 
+    .description br{
+        display: none;
+    }
+
     .description p {
+        margin: 0 10vw;
+        text-align: justify;
         font-size: 3.2vw;
         line-height: 6vw;
     }
@@ -710,6 +715,7 @@
     }
 
     .machines-text h1 {
+        margin-right: -10vw;
         font-size: 6vw;
     }
 
@@ -733,10 +739,11 @@
     /* ===== MATERIALS ===== */
     .materials h1 {
         font-size: 6vw;
-    }
+    }   
 
     .materials-intro {
-        font-size: 2.8vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 4.8vw;
     }
 
@@ -752,11 +759,13 @@
 
     /* ---------- CNC APPLICATIONS ---------- */
     .cnc-applications h1 {
+        margin: 0 -10vw;
         font-size: 6vw;
     }
 
     .applications-intro {
-        font-size: 3.6vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -770,7 +779,7 @@
     }
 
     .application-card h2 {
-        font-size: 4.8vw;
+        font-size: 4.8svw;
     }
 
     .application-card p {
@@ -786,11 +795,12 @@
 
     /* ---------- ADVANTAGES /WHY US ---------- */
     .AnB h1 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .AnB-intro {
-        font-size: 3.6vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -814,11 +824,13 @@
 
     /* ===== QUALITY ASSURANCE ===== */
     .quality-assurance h1 {
+        margin: 0 -10vw;
         font-size: 5vw;
     }
 
     .qa-intro {
-        font-size: 3.5vw;
+        text-align: justify;
+        font-size: 3.2vw;
         line-height: 6vw;
     }
 
@@ -876,6 +888,7 @@
     }
 
     .cta p {
+        text-align: justify;
         font-size: 3.6vw;
         line-height: 6vw;
         max-width: 90vw;

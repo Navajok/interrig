@@ -14,6 +14,7 @@
   position: relative;
   width: 100%;
   height: 87vh;
+  margin-bottom: 8vw;
 }
 
 .slide {
@@ -96,18 +97,10 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ===========Companies=========== */
-
-.companies img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 8vw;
-}
-
 /* ===========Headline=========== */
 .headline {
   text-align: center;
-  margin: 0 20px 8vw 20px;
+  margin: 0 auto 8vw;
 }
 
 .headline h1 {
@@ -346,11 +339,17 @@
   .headline h1 {
     font-size: 5vw;
     line-height: 7vw;
+    margin-bottom: 5vw;
   }
 
   .headline p {
+    text-align: justify;
     font-size: 2.8vw;
     line-height: 5vw;
+  }
+
+  .headline b {
+    font-weight: 600;
   }
 
   /* ====== SERVICES ====== */
@@ -375,19 +374,28 @@
     grid-template-columns: 1fr;
     gap: 6vw;
     text-align: center;
-    margin: 0 auto 18vw;
+    margin: 0 auto 12vw;
   }
 
   .metalWelding-text h1 {
-    font-size: 4vw;
+    font-size: 6vw;
     text-decoration-thickness: 0.3vw;
     text-underline-offset: 0.4vw;
   }
 
+  .metalWelding-text br{
+    display: none;
+  }
+
   .metalWelding-text p {
     min-width: unset;
+    text-align: justify;
     font-size: 3vw;
     line-height: 5vw;
+  }
+
+  .metalWelding-text b {
+    font-weight: 600;
   }
 
   .metalWelding-img img {
@@ -552,31 +560,36 @@
 
   /* ---------- FEATURED PROJECTS ---------- */
 
-    .featured-projects {
-        margin-bottom: 4rem;
-    }
+  .featured-projects {
+    margin-bottom: 4rem;
+  }
 
-    .featured-projects-header h1 {
-        font-size: 3rem;
-    }
+  .featured-projects-header h1 {
+    font-size: 3rem;
+  }
 
-    .projects-slide.active {
-        gap: 2.5rem;
-    }
+  .fp_underline{
+    margin-bottom: 3rem;
+  }
 
-    .projects-slide img {
-        width: 100%;
-        border-radius: 1rem;
-    }
+  .projects-slide {
+    gap: 2.5rem;
+  }
 
-    .projects-slider-controls {
-        gap: 2rem;
-        margin-top: 3rem;
-    }
+  .projects-slide img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 1rem;
+  }
 
-    .projects-slider-controls button {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.5rem;
-    }
+  .projects-slider-controls {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .projects-slider-controls button {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+  }
 }

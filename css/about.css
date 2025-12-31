@@ -281,9 +281,13 @@
     margin-bottom: 5vw;
   }
 
+  .overview-text br {
+    display: none;
+  }
+
   .overview-text p {
-    min-width: max-content;
-    font-size: 3vw;
+    text-align: justify;
+    font-size: 3.2vw;
     line-height: 5vw;
     margin-bottom: 5vw;
   }
@@ -342,8 +346,13 @@
     font-size: 4vw;
   }
 
+  .metalWelding-text br{
+    display: none;
+  }
+
   .metalWelding-text p {
     min-width: unset;
+    text-align: justify;
     font-size: 3vw;
     line-height: 5vw;
   }

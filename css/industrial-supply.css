@@ -95,6 +95,7 @@
     /* HERO */
     .slider {
         height: 45vw;
+        margin-bottom: 5vw;
     }
 
     .caption h1 {
@@ -103,7 +104,12 @@
     }
 
     /* DESCRIPTION */
+    .description br{
+        display: none;
+    }
+
     .description {
+        text-align: justify;
         font-size: 4vw;
         line-height: 6vw;
         padding: 0 6vw;
