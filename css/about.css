@@ -264,7 +264,7 @@
 
   .underline {
     width: 6vw;
-    border: 0.2vw solid red;
+    border: 0.4vw solid red;
   }
 
   /* ===== HERO ===== */
@@ -540,4 +540,5 @@
   .contact-info img {
     width: 1.5rem;
   }
+
 }
