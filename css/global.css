@@ -269,19 +269,17 @@ footer {
   }
 
   .logo-black img {
-    width: 55vw;
-    height: auto;
-    margin-top: 0;
+    width: 85vw;
   }
 
   .footer-col h3 {
-    font-size: 4vw;
+    font-size: 4.8vw;
     margin-bottom: 3vw;
   }
 
   .footer-col p,
   .footer-links a {
-    font-size: 2.6vw;
+    font-size: 3.2vw;
     line-height: 5.5vw;
   }
 
