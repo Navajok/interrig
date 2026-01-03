@@ -344,9 +344,10 @@
     font-size: 3vw;
   }
 
-  /* ====== COMPANIES ====== */
-  .companies img {
-    margin-bottom: 12vw;
+  /* ====== CERTIFICATIONS ====== */
+
+  .certifications img {
+    width: 50%;
   }
 
   /* ====== HEADLINE ====== */
