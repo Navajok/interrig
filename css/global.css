@@ -161,6 +161,7 @@ header {
     flex-direction: column;
     display: none;
     width: 100%;
+    margin-top: 4vw;
   }
 
   #nav-toggle:checked~.nav-links {
@@ -180,10 +181,13 @@ header {
     padding: 4vw 0;
   }
 
+  #services {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   #services li a {
-    font-size: 3.5vw;
-    background-color: #111;
-    border-bottom: none;
+    font-size: 3.6vw;
     padding: 3vw 0;
   }
 
@@ -321,7 +325,7 @@ footer {
 
   #services li a {
     font-size: 0.95rem;
-    padding: 0.6rem 0;
+    padding: 0.6rem;
   }
 
   .nav-links .nav-contact {
