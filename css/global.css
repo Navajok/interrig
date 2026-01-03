@@ -129,7 +129,7 @@ header {
   }
 
   .nav-bar {
-    padding: 5vw 1vw;
+    padding: 3vw 1vw;
     flex-wrap: wrap;
   }
 
@@ -152,7 +152,7 @@ header {
   .hamburger {
     display: inline-block;
     color: white;
-    font-size: 7vw;
+    font-size: 6.3vw;
     cursor: pointer;
   }
 
