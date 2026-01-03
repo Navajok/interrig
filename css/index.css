@@ -14,7 +14,6 @@
   position: relative;
   width: 100%;
   height: 87vh;
-  margin-bottom: 8vw;
 }
 
 .slide {
@@ -96,6 +95,18 @@
 .next:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* ===========Certifications============ */
+.certifications{
+  width: 100%;
+  text-align: center;
+  margin: 5vw 0;
+}
+
+.certifications img{
+  width: 25%;
+}
+
 
 /* ===========Headline=========== */
 .headline {
@@ -498,15 +509,14 @@
     right: 3rem;
   }
 
-  /* ---------- COMPANIES ---------- */
+  /* ---------- certifications ---------- */
 
-  .companies {
-    max-width: 1600px;
-    margin: 0 auto;
+  .certifications {
+    margin: 3vw auto;
   }
 
-  .companies img {
-    margin-bottom: 6rem;
+  .certifications img {
+    width: 15%;
   }
 
   /* ---------- HEADLINE ---------- */

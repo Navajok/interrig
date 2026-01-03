@@ -29,8 +29,8 @@ header{
   width: 20vw;
 }
 
-.Certification {
-  width: 7vw;;
+#logo-mobile{
+  display: none;
 }
 
 .nav-links {
@@ -129,12 +129,20 @@ header{
   }
 
   .nav-bar {
-    padding: 5vw; 
+    padding: 5vw 2vw; 
     flex-wrap: wrap;
   }
 
-  #logo img {
-    width: 55vw;
+  #logo-full{
+    display: none;
+  }
+
+  #logo-mobile{
+    display: block;
+  }
+
+  #logo img{
+    width: 90vw;
   }
 
   .Certification{
