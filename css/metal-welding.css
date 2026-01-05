@@ -346,7 +346,6 @@
 
 .projects-slider {
     position: relative;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -578,7 +577,6 @@
     }
 
     /* ---------- CNC APPLICATIONS ---------- */
-
     .cnc-applications h1 {
         font-size: 6vw;
     }

@@ -180,7 +180,7 @@
 
 /* ========== MATERIALS ========== */
 .materials {
-    padding: 8%;
+    padding: 8% 10%;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     margin-bottom: 5vw;
@@ -212,7 +212,6 @@
 }
 
 .materials-table {
-    margin: 0 auto;
     border-top: 0.2vw solid #cdcdcd;
 }
 
@@ -517,7 +516,6 @@
 
 .projects-slider {
     position: relative;
-    overflow: hidden;
     width: 100%;
 }
 

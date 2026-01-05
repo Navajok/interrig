@@ -1,3 +1,8 @@
+.underline {
+    width: 4vw;
+    border: 0.2vw solid red;
+}
+
 /* =========== HERO =========== */
 .slider {
     position: relative;
@@ -45,57 +50,110 @@
     margin-bottom: 3.5vw;
 }
 
-/* =========== OUR SUPPLIES =========== */
-.ourSupplies {
+
+
+/* ================= FEATURED PROJECTS ================= */
+
+.featured-projects {
+    margin-bottom: 6vw;
     text-align: center;
-    background-color: #D9D9D9;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    margin-bottom: 7vw;
-    padding: 2% 20%;
 }
 
-.ourSupplies-header h1 {
-    padding: 3.8vw 0;
-    font-size: 2.5vw;
-    text-decoration: underline;
-    text-underline-offset: 0.5vw;
+.featured-projects-header h1 {
+    font-size: 3.2vw;
 }
 
-.ourSupplies-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3.3vw 4.7vw;
-    margin-bottom: 4.4vw;
-    max-width: 1600px;
-    margin: 0 auto;
+.fp_underline {
+    margin: 0 auto 3vw;
 }
 
-.ourSupplies-img{
-    transition: 0.3s ease;
-}
-
-.ourSupplies-img:hover{
-    transform: translateY(-0.7vw);
-}
-
-.ourSupplies-img img {
+.projects-slider {
+    position: relative;
     width: 100%;
-    border: 0.15vw solid black;
 }
 
-.ourSupplies-img p {
+.projects-slide {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    animation: fadeSlide 0.5s ease;
+}
+
+.projects-slide.active {
+    display: grid;
+}
+
+.projects-slide img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 1vw;
+    object-fit: cover;
+    box-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-slide p{
     font-size: 1vw;
     margin-top: 0.8vw;
 }
 
-/* ===========MOBILE=========== */
-@media (max-width: 768px) {
+.projects-slide img:hover {
+    transform: translateY(-0.4vw);
+    box-shadow: 0.6vw 0.6vw 1.4vw rgba(0, 0, 0, 0.45);
+}
 
-    /* HERO */
+/* ----- Controls ----- */
+
+.projects-slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+
+.projects-slider-controls button {
+    font-size: 2.2vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.projects-slider-controls button:hover {
+    background-color: red;
+    transform: translateY(-0.2vw);
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(1vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========MOBILE=========== */
+@media screen and (max-width: 768px) {
+
+
+    .underline {
+        width: 6vw;
+        border: 0.2vw solid red;
+    }
+
+    /* ===== HERO ===== */
     .slider {
-        height: 45vw;
-        margin-bottom: 5vw;
+        height: 50vw;
+        margin-bottom: 12vw;
     }
 
     .caption h1 {
@@ -104,7 +162,7 @@
     }
 
     /* DESCRIPTION */
-    .description br{
+    .description br {
         display: none;
     }
 
@@ -136,5 +194,78 @@
     .ourSupplies-img p {
         font-size: 4vw;
         margin-top: 3vw;
+    }
+
+    /* ====== FEATURED PROJECTS ====== */
+
+    .featured-projects-header h1 {
+        font-size: 6vw;
+    }
+
+    .fp_underline {
+        margin-bottom: 6vw;
+    }
+
+    .projects-slide {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+    }
+
+    .projects-slide img {
+        width: 100%;
+        border-radius: 2vw;
+    }
+
+    .projects-slider-controls button {
+        font-size: 5vw;
+        width: 9vw;
+        height: 9vw;
+    }
+}
+
+
+
+/* ==========DESKTOP========== */
+
+@media screen and (min-width: 1920px) { 
+
+    .underline {
+        width: 2vw;
+        border-width: 0.1vw;
+    }
+
+    /* ---------- FEATURED PROJECTS ---------- */
+
+    .featured-projects {
+        margin-bottom: 4rem;
+    }
+
+    .featured-projects-header h1 {
+        font-size: 3rem;
+    }
+
+    .fp_underline {
+        margin-bottom: 3rem;
+    }
+
+    .projects-slide {
+        gap: 2.5rem;
+    }
+
+    .projects-slide img {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 1rem;
+    }
+
+    .projects-slider-controls {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .projects-slider-controls button {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
     }
 }
