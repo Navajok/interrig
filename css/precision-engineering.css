@@ -67,12 +67,11 @@
     transform: translateY(-0.2vw);
 }
 
-
 /* =========== DESCRIPTION =========== */
 .description {
     text-align: center;
     align-items: center;
-    margin-bottom: 3.8vw;
+    margin-bottom: 4vw;
 }
 
 .description h1 {
@@ -80,7 +79,7 @@
 }
 
 .description p {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     line-height: 2vw;
 }
 
@@ -88,12 +87,107 @@
     margin: 0 auto 1vw;
 }
 
-/* ===== CAPABILITIES ===== */
-.capabilities {
-    background-color: #ededed;
+/* =========== MILLING & DRILLING TIMELINE =========== */
+
+.md-timeline {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
-    padding: 5% 8%;
+    background-color: #ededed;
+    padding: 4% 12%;
+    margin-bottom: 5vw;
+}
+
+.md-timeline h1 {
+    text-align: center;
+    font-size: 3.2vw;
+}
+
+.md_underline {
+    margin: 0 auto 5vw;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 3vw;
+    left: 0.5vw;
+    width: 0.3vw;
+    height: calc(100% - 3vw);
+    background-color: red;
+}
+
+.timeline-item {
+    font-size: 1.1vw;
+}
+
+.timeline-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2.4vw;
+    font-weight: 700;
+    color: red;
+}
+
+.timeline-item {
+    max-width: 1600px;
+    margin: 0 auto 5vw;
+    position: relative;
+    padding-left: 6vw;
+}
+
+.timeline-columns>div {
+    flex: 1 1 45%;
+}
+
+.timeline-item h2 {
+    font-size: 2.4vw;
+}
+
+.timeline-item b {
+    font-weight: 600;
+}
+
+.timeline_underline {
+    margin-bottom: 1.6vw;
+}
+
+.section-intro {
+    max-width: 1000px;
+    margin-bottom: 2vw;
+    line-height: 1.8vw;
+}
+
+.timeline-columns {
+    display: flex;
+    gap: 6%;
+}
+
+.timeline-columns p {
+    line-height: 1.8vw;
+}
+
+.timeline-columns h3 {
+    font-size: 1.4vw;
+    margin-bottom: 0.4vw;
+}
+
+.timeline-columns ul {
+    padding-left: 1.2vw;
+}
+
+.timeline-columns li {
+    margin-bottom: 0.8vw;
+}
+
+.conclusion-text {
+    max-width: 1000px;
+    line-height: 1.8vw;
+}
+
+/* ===== CAPABILITIES ===== */
+.capabilities {
+    margin-bottom: 7vw;
 }
 
 .capabilities-inner {
@@ -131,56 +225,9 @@
     box-shadow: 0.6vw 0.6vw 1.6vw rgba(0, 0, 0, 0.55);
 }
 
-/* =========== MACHINES =========== */
-.machines {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8% 0;
-}
-
-.machines-text h1 {
-    font-size: 3.2vw;
-}
-
-.why_machines {
-    margin-bottom: 3vw;
-}
-
-.machines-text ul {
-    list-style: none;
-}
-
-.machines-text li {
-    padding: 2% 0 2% 0;
-    font-size: 1.2vw;
-}
-
-.machines-text b {
-    color: rgb(0, 162, 0);
-}
-
-.machines-text p {
-    font-size: 1vw;
-}
-
-.machines-img {
-    width: 40%;
-}
-
-.machines-img p {
-    font-size: 1vw;
-}
-
-.machines-img img {
-    width: 100%;
-    box-shadow: 0.2vw 0.2vw 1vw rgba(0, 0, 0, 0.7);
-    margin-bottom: 0.5vw;
-}
-
 /* ========== MATERIALS ========== */
 .materials {
-    padding: 8% 10%;
+    padding: 8% 12%;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     margin-bottom: 5vw;
@@ -514,11 +561,6 @@
     margin: 0 auto 3vw;
 }
 
-.projects-slider {
-    position: relative;
-    width: 100%;
-}
-
 .projects-slide {
     display: none;
     grid-template-columns: repeat(3, 1fr);
@@ -563,7 +605,7 @@
     cursor: pointer;
     background-color: black;
     color: white;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.3s ease;
 }
 
 .projects-slider-controls button:hover {
@@ -628,7 +670,6 @@
 @media screen and (max-width: 768px) {
 
     .capabilities,
-    .machines,
     .materials,
     .cnc-applications,
     .AnB,
@@ -680,7 +721,7 @@
         font-size: 6vw;
     }
 
-    .description br{
+    .description br {
         display: none;
     }
 
@@ -689,6 +730,72 @@
         text-align: justify;
         font-size: 3.2vw;
         line-height: 6vw;
+    }
+
+    /* ===== MILLING & DRILLING ==== */
+    .md-timeline {
+        padding: 6vw 8vw;
+        margin-bottom: 8vw;
+    }
+
+    .md-timeline h1 {
+        font-size: 6vw;
+    }
+
+    .md_underline {
+        margin-bottom: 6vw;
+    }
+
+    .timeline-item {
+        font-size: 3.5vw;
+        max-width: 90vw;
+        margin: 0 auto 6vw;
+        padding-left: 12vw;
+    }
+
+    .timeline-item::before {
+        top: 8vw;
+        left: 1.6vw;
+        width: 0.6vw;
+        height: calc(100% - 10vw);
+    }
+
+    .timeline-number {
+        font-size: 5vw;
+        left: 0;
+        top: 0;
+    }
+
+    .timeline-item h2 {
+        font-size: 5vw;
+    }
+
+    .timeline_underline {
+        margin-bottom: 5vw;
+    }
+
+    .timeline-columns {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    .timeline-columns h3 {
+        font-size: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .timeline-columns p,
+    .timeline-columns li,
+    .section-intro,
+    .conclusion-text {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        margin-bottom: 3vw;
+        text-align: justify;
+    }
+
+    .timeline-columns ul {
+        padding-left: 4vw;
     }
 
     /* ===== CAPABILITIES ===== */
@@ -704,40 +811,13 @@
     .card {
         font-size: 4vw;
         padding: 4vw;
-    }
-
-    /* ===== MACHINES ===== */
-    .machines {
-        flex-direction: column;
-        gap: 6vw;
-    }
-
-    .machines-text h1 {
-        margin-right: -10vw;
-        font-size: 6vw;
-    }
-
-    .machines-text li {
-        font-size: 3.8vw;
-    }
-
-
-    .machines-text p {
-        font-size: 2.4vw;
-    }
-
-    .machines-img {
-        width: 100%;
-    }
-
-    .machines-img p {
-        font-size: 3.5vw;
+        border-width: 0.8vw;
     }
 
     /* ===== MATERIALS ===== */
     .materials h1 {
         font-size: 6vw;
-    }   
+    }
 
     .materials-intro {
         text-align: justify;
@@ -909,9 +989,6 @@
 
     /* ---------- HERO ---------- */
     .slider {
-        /* max-width: 1600px;
-        margin: 0 auto;
-        max-height: 700px; */
         height: 45rem;
     }
 
@@ -949,6 +1026,62 @@
         line-height: 2rem;
     }
 
+    /* ===== MILLING & DRILLING ===== */
+    .md-timeline {
+        padding: 2rem auto;
+        margin-bottom: 5rem;
+    }
+
+    .md-timeline h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .md_underline {
+        margin: 0 auto 5rem;
+    }
+
+    .timeline-item {
+        font-size: 1.1rem;
+    }
+
+    .timeline-number {
+        left: 0.1rem;
+        font-size: 2.6rem;
+    }
+
+    .timeline-item h2 {
+        font-size: 2.4rem;
+    }
+
+    .timeline-columns h3 {
+        font-size: 1.6rem;
+    }
+
+    .section-intro {
+        max-width: unset;
+        font-size: 1.2rem;
+    }
+
+    .timeline-columns p {
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    .timeline-columns ul {
+        padding-left: 1.2rem;
+    }
+
+    .timeline-columns li {
+        margin-bottom: 0.8rem;
+    }
+
+    .conclusion-text {
+        max-width: unset;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
     /* ===== CAPABILITIES ===== */
     .capabilities h1 {
         font-size: 2.4rem;
@@ -957,23 +1090,6 @@
     .card {
         font-size: 1.2rem;
         padding: 1.6rem 2rem;
-    }
-
-    /* ===== MACHINES ===== */
-    .machines-text h1 {
-        font-size: 2.4rem;
-    }
-
-    .machines-text li {
-        font-size: 1.2rem;
-    }
-
-    .machines-text p {
-        font-size: 1rem;
-    }
-
-    .machines-img p {
-        font-size: 1rem;
     }
 
     /* ===== MATERIALS ===== */

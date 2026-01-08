@@ -27,6 +27,7 @@ function validateForm() {
     }
 
     return formOK;
+
 }
 
 function validateMobile(str) {
@@ -46,5 +47,4 @@ function clearErrorMsgs() {
         labels[i].innerHTML = "";
     }
 }
-
 

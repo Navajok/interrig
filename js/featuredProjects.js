@@ -1,11 +1,11 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-document.querySelector('#projectsPrev').onclick = function () {
+document.querySelector('.projectsPrev').onclick = function () {
   plusSlides(-1);
 };
 
-document.querySelector('#projectsNext').onclick = function () {
+document.querySelector('.projectsNext').onclick = function () {
   plusSlides(+1);
 };
 
