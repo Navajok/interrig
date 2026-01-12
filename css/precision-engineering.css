@@ -470,6 +470,7 @@
 /* ==================== MOBILE ADJUSTMENTS ==================== */
 @media screen and (max-width: 768px) {
 
+    .md-timeline,
     .materials,
     .AnB,
     .featured-projects {
@@ -864,5 +865,6 @@
         padding: 1rem 2rem;
         border-radius: 1.6rem;
     }
+
 
 }
