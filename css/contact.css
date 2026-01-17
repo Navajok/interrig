@@ -178,7 +178,7 @@ input[type="file"] {
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
 }
 
 .popupBox {
@@ -307,7 +307,7 @@ input[type="file"] {
     /* =========== THANK YOU POPUP =========== */
 
     .popupBox {
-        padding: 2vw 2.8vw;
+        padding: 4vw 3.2vw;
         border-radius: 3.2vw;
         max-width: 80%;
         margin: 0 auto;
