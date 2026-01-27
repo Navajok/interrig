@@ -44,3 +44,9 @@ function clearErrorMsgs() {
     }
 }
 
+$(document).ready(function() {
+    $('#popupOkBtn').click(function() {
+        $('.popupBackground').fadeOut(150);
+        window.history.replaceState(null, null, window.location.pathname);
+    });
+});

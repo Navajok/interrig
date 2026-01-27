@@ -124,7 +124,7 @@
   <?php
   if (isset($_GET['success'])) {
     echo "<script>
-    $('.popupBackground').fadeIn(150).css('display', 'flex');</script>";
+    $('#bookingPopup').fadeIn(150).css('display', 'flex');</script>";
   }
   ?>
 
