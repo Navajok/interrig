@@ -33,8 +33,11 @@ $body .= "Email: $email\n\n";
 $body .= "Message:\n$message\n\n";
 
 // Handle file uploads
-if (!empty($_FILES['Drawings']['name'][0])) {
-    for ($i = 0; $i < count($_FILES['Drawings']['name']); $i++) {
+if (isset($_FILES['Drawings']) && !empty($_FILES['Drawings']['name'][0])) {
+    // PHP 8 safe count check
+    $fileCount = is_array($_FILES['Drawings']['name']) ? count($_FILES['Drawings']['name']) : 0;
+    
+    for ($i = 0; $i < $fileCount; $i++) {
         if ($_FILES['Drawings']['error'][$i] === UPLOAD_ERR_OK) {
             $fileTmp  = $_FILES['Drawings']['tmp_name'][$i];
             $fileName = $_FILES['Drawings']['name'][$i];
