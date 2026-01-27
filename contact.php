@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inter-Rig - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html" id="logo">
+        <img src="images/logo.png" alt="Inter-Rig Logo" id="logo-full">
+        <img src="images/logo-mobile.png" alt="Inter-Rig Logo" id="logo-mobile">
+      </a>
+
+      <label for="nav-toggle" class="hamburger">&#9776</label>
+      <input type="checkbox" id="nav-toggle">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <li class="dropdown">
+          <label for="triangle">Product & Services <b id="triangle_symbol">&#9660</b></label>
+          <input type="checkbox" id="triangle" />
+
+          <ul id="services">
+            <li><a href="metal-welding.html">Metal Welding & Fabrication</a></li>
+            <li><a href="precision-engineering.html">Precision Engineering</a></li>
+            <li><a href="industrial-supply.html">Industrial Supply</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html" class="nav-contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <div class="slide">
+      <img src="images/contactusbanner.png" alt="">
+      <div class="overlay"></div>
+      <div class="caption">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+
+    <div class="contact-info-boxes">
+
+      <div class="contact-box">
+        <img src="images/contactus1.png" alt="">
+        <h3>Location</h3>
+        <p>63 Tessensohn Road<br>Singapore 217665</p>
+      </div>
+
+      <div class="contact-box">
+        <img src="images/contactus2.png" alt="">
+        <h3>Phone Number</h3>
+        <p>+65 6298 3968 (5 Lines)</p>
+      </div>
+
+      <div class="contact-box">
+        <img src="images/contactus3.png" alt="">
+        <h3>Email</h3>
+        <p>interrig@singnet.com.sg</p>
+      </div>
+
+      <div class="contact-box">
+        <img src="images/contactus4.png" alt="">
+        <h3>Working Hours</h3>
+        <p>Monday to Friday<br>8:00AM - 5:30PM</p>
+      </div>
+
+    </div>
+
+    <div class="quote-form">
+      <h1>Get A Quote</h1>
+      <div class="underline"></div>
+
+      <form action="sendmail.php" method="POST" enctype="multipart/form-data" id="contactus">
+        <div class="inputs">
+          <input type="hidden" name="Quote Form" value="Quote Form Submission">
+          <input type="text" placeholder="Name" name="Name" id="name" required>
+          <span id="name_err" class="err_label"></span>
+          <input type="text" placeholder="Phone" name="Phone" id="mobile" required>
+          <span id="mobile_err" class="err_label"></span>
+          <input type="email" placeholder="Email" name="Email" required id="email">
+        </div>
+
+        <label for="Drawings">Drawings</label>
+        <input type="file" name="Drawings[]" id="Drawings" multiple>
+
+        <textarea placeholder="Message" name="Message" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+
+    </div>
+
+  </section>
+
+  <section class="popupBackground">
+    <div id="bookingPopup">
+      <div class="popupBox">
+        <h2>Thank you for reaching out to us!</h2>
+        <p>
+          Please click <b>confirm</b> to successfully submit your enquiry. Our team will review your message and get
+          back to you within
+          24-48 hours.
+          We appreciate your interest and look forward to assisting you.</p>
+        <button id="popupOkBtn">Confirm</button>
+      </div>
+    </div>
+  </section>
+
+  <?php
+  if (isset($_GET['success'])) {
+    echo "<script>
+    $('.popupBackground').fadeIn(150).css('display', 'flex');</script>";
+  }
+  ?>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col logo-black">
+        <img src="images/logo-black.png" alt="Inter-Rig Supply and Engineering">
+      </div>
+
+      <div class="footer-col">
+        <h3>Main Office</h3>
+        <p>+65 6298 3968 (5 Lines)<br>
+          interrig@singnet.com.sg<br><br>
+          63 Tessensohn Road<br>
+          Singapore 217665</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Metal Work</h3>
+        <p>+65 6242 8917 <br><br>
+          Blk 3018 Bedok North St 5 <br>
+          #03-51 <br>
+          Singapore 486132</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Engineering Work</h3>
+        <p>+65 6285 8276 <br><br>
+          Blk 38 Defu Lane 10 <br>
+          #02-31 <br>
+          Singapore 539215</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="metal-welding.html">Metal Welding & Fabrication</a></li>
+          <li><a href="precision-engineering.html">Precision Engineering</a></li>
+          <li><a href="industrial-supply.html">Industrial Supply</a></li>
+          <li><a href="contact.html" class="footer-contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/validate.js"></script>
+</body>
+
+</html>

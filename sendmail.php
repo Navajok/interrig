@@ -59,7 +59,7 @@ $body .= "--$boundary--";
 // Send mail
 if (mail($to, $subject, $body, $headers)) {
     // Redirect to thank-you page
-    header("Location: contact.html");
+    header("Location: contact.php?success=1");
     exit();
 } else {
     echo "Mail failed to send. Please try again later.";
