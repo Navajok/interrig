@@ -121,16 +121,6 @@
     </div>
   </section>
 
-  <?php
-  if (isset($_GET['success'])) {
-    echo "<script>
-    $(document).ready(function() {
-        $('.popupBackground').fadeIn(150).css('display', 'flex');
-    });
-    </script>";
-  }
-  ?>
-
   <footer>
     <div class="footer-content">
       <div class="footer-col logo-black">
@@ -176,6 +166,15 @@
   </footer>
   <script src="js/jquery.js"></script>
   <script src="js/validate.js"></script>
+  <?php
+  if (isset($_GET['success'])) {
+    echo "<script>
+    $(document).ready(function() {
+        $('.popupBackground').fadeIn(150).css('display', 'flex');
+    });
+    </script>";
+  }
+  ?>
 </body>
 
 </html>
