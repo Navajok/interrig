@@ -12,7 +12,7 @@ $email   = htmlspecialchars($_POST['Email'] ?? '');
 $message = htmlspecialchars($_POST['Message'] ?? '');
 
 // Email settings
-$to      = "interrig@singnet.com.sg"; // company email
+$to      = "garianchung@gmail.com"; // company email
 $subject = "New Quote Form Submission";
 
 // Boundary for attachments
@@ -56,7 +56,7 @@ $body .= "--$boundary--";
 // Send mail
 if (mail($to, $subject, $body, $headers)) {
     // Redirect to thank-you page
-    header("Location: thank-you.html");
+    header("Location: contact.html");
     exit();
 } else {
     echo "Mail failed to send. Please try again later.";
