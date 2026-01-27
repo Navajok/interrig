@@ -112,7 +112,7 @@
       <div class="popupBox">
         <h2>Thank you for reaching out to us!</h2>
         <p>
-          Your enquiry has been successfully submitted Our team will review your message and get
+          Your enquiry has been successfully submitted. Our team will review your message and get
           back to you within
           24-48 hours.
           We appreciate your interest and look forward to assisting you.</p>
@@ -122,7 +122,7 @@
   </section>
 
   <?php
-  if (!isset($_GET['success'])) {
+  if (isset($_GET['success'])) {
     echo "<script>
     $('.popupBackground').fadeIn(150).css('display', 'flex');</script>";
   }

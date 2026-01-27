@@ -1,16 +1,7 @@
 document.getElementById("contactus").addEventListener("submit", function (event) {
-    event.preventDefault(); // prevents the form from submitting.
-    if (!validateForm()) {  // if the validation of the form fails, we will not submit the form.                             
-        return
-    }
-
-    $('.popupBackground').fadeIn(150).css('display', 'flex');
-});
-
-
-$('#popupOkBtn').on('click', function () {
-    if (validateForm()) {
-        document.getElementById("contactus").submit();
+    if (!validateForm()) {  
+        event.preventDefault(); // This stops the form from sending if there are errors
+        return;
     }
 });
 
