@@ -12,7 +12,7 @@ $email   = htmlspecialchars($_POST['Email'] ?? '');
 $message = htmlspecialchars($_POST['Message'] ?? '');
 
 // Email settings
-$to      = "garianchung@gmail.com"; // company email
+$to      = "interrig@singnet.com.sg"; // company email
 $subject = "New Quote Form Submission";
 
 // Boundary for attachments
